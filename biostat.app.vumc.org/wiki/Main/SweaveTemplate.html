@@ -1,0 +1,675 @@
+<!DOCTYPE html><html lang="en">
+
+<!-- Mirrored from biostat.app.vumc.org/wiki/Main/SweaveTemplate by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Sep 2024 16:39:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<title> SweaveTemplate &lt; Main &lt; Vanderbilt Biostatistics Wiki</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, user-scalable=yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="icon" href="../pub/Main/SitePreferences/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../pub/Main/SitePreferences/favicon.ico" type="image/x-icon" />
+<link rel="alternate" href="https://biostat.app.vumc.org/wiki/bin/edit/Main/SweaveTemplate?t=1726763814" type="application/x-wiki" title="edit SweaveTemplate" />
+<meta name="TEXT_NUM_TOPICS" content="Number of topics:" />
+<meta name="TEXT_MODIFY_SEARCH" content="Modify search" />
+
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="WebRss" />
+<base  /><!--[if IE]></base><![endif]-->
+<link rel='stylesheet' href='https://biostat.app.vumc.org/wiki/pub/System/PageOptimizerPlugin/cache/76ea346e610aea74367a807e2dd00ef6.css' class='JQUERYPLUGIN::THEME JSCalendarContrib/calendar-large SMILIESPLUGIN head' media='all' />
+<style> .calendar {z-index:2000;}</style>
+
+<style class='head TABLEPLUGIN_default' type="text/css" media="all">
+body .foswikiTable {border-width:1px}
+body .foswikiTable .tableSortIcon img {padding-left:.3em; vertical-align:text-bottom}
+body .foswikiTable td {border-style:solid none; vertical-align:top}
+body .foswikiTable th {border-style:none solid; vertical-align:top; background-color:#d6d3cf; color:#000000}
+body .foswikiTable th a:link {color:#000000}
+body .foswikiTable th a:visited {color:#000000}
+body .foswikiTable th a:hover {color:#000000; background-color:#d6d3cf}
+body .foswikiTable th.foswikiSortedCol {background-color:#c4c1ba}
+body .foswikiTable tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+body .foswikiTable tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f7f7f6}
+body .foswikiTable tr.foswikiTableRowdataBg1 td {background-color:#f7f7f6}
+body .foswikiTable tr.foswikiTableRowdataBg1 td.foswikiSortedCol {background-color:#f0f0ee}
+</style>
+<style class='head TABLEPLUGIN_specific' type="text/css" media="all">
+body .foswikiTable#tableSweaveTemplate1 td {vertical-align:middle; vertical-align:top}
+body .foswikiTable#tableSweaveTemplate1 td.foswikiTableCol0 {text-align:left}
+body .foswikiTable#tableSweaveTemplate1 td.foswikiTableCol1 {text-align:left}
+body .foswikiTable#tableSweaveTemplate1 td.foswikiTableCol2 {text-align:left}
+body .foswikiTable#tableSweaveTemplate1 td.foswikiTableCol3 {text-align:right}
+body .foswikiTable#tableSweaveTemplate1 td.foswikiTableCol4 {text-align:left}
+body .foswikiTable#tableSweaveTemplate1 td.foswikiTableCol5 {text-align:left}
+body .foswikiTable#tableSweaveTemplate1 td.foswikiTableCol6 {text-align:left}
+body .foswikiTable#tableSweaveTemplate1 td.foswikiTableCol7 {text-align:left}
+body .foswikiTable#tableSweaveTemplate1 th {vertical-align:middle; background-color:#ffffff; color:#0066cc; text-align:left}
+body .foswikiTable#tableSweaveTemplate1 th a:link {color:#0066cc}
+body .foswikiTable#tableSweaveTemplate1 th a:visited {color:#0066cc}
+body .foswikiTable#tableSweaveTemplate1 th a:hover {color:#0066cc; background-color:#ffffff}
+body .foswikiTable#tableSweaveTemplate1 th.foswikiSortedCol {background-color:#eeeeee}
+body .foswikiTable#tableSweaveTemplate1 tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+body .foswikiTable#tableSweaveTemplate1 tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f5f5f5}
+</style>
+
+<style type="text/css" media="all">
+	/* Styles that are set using variables */
+	.patternBookView .foswikiTopRow,
+	.patternWebIndicator,
+	.patternWebIndicator a {
+		background-color:#9b031e;
+	}
+	#patternTopBarContents { background-image:url(../pub/Main/SitePreferences/top_bar_gradient.png); background-repeat:repeat-x;}
+#patternTopBarContents { background-color:#FFFFFF;}
+.patternBookView {
+	border-color:#9b031e;
+}
+.patternPreviewPage #patternMain {
+	/* uncomment to set the preview image */
+	/*background-image:url("/wiki/pub/System/PreviewBackground/preview2bg.gif");*/
+}
+</style>
+<link rel='stylesheet' href='../pub/System/PatternSkin/print.css' media='print' type='text/css' />
+
+<script class='script JQUERYPLUGIN' src='../pub/System/JQueryPlugin/jquery-2.2.4.js'></script>
+<script class='script JQUERYPLUGIN::OBSERVER' src='../pub/System/JQueryPlugin/plugins/observer/observer4abf.js?version=0.1'></script>
+<script class='script JQUERYPLUGIN::MIGRATE' src='../pub/System/JQueryPlugin/plugins/migrate/jquery.migrate4152.js?version=3.4.0'></script>
+<script class='script JQUERYPLUGIN::FOSWIKI' src='../pub/System/JQueryPlugin/plugins/foswiki/jquery.foswikiae26.js?version=3.10'></script>
+<script class='script JQUERYPLUGIN::BROWSER' src='../pub/System/JQueryPlugin/plugins/browser/jquery.browser72db.js?version=0.1.0'></script>
+<script class='script JQUERYPLUGIN::EASING' src='../pub/System/JQueryPlugin/plugins/easing/jquery.easing7c6c.js?version=1.3'></script>
+<script class='script JQUERYPLUGIN::FOSWIKI::PREFERENCES foswikiPreferences' type='text/json'>{
+   "SCRIPTURLPATHS" : {
+      "view" : "/wiki"
+   },
+   "SCRIPTURLPATH" : "/wiki/bin",
+   "WIKIUSERNAME" : "Main.WikiGuest",
+   "TOPIC" : "SweaveTemplate",
+   "PUBURL" : "https://biostat.app.vumc.org/wiki/pub",
+   "SCRIPTSUFFIX" : "",
+   "SKIN" : "natedit,pattern",
+   "COOKIEPATH" : "/",
+   "WEB" : "Main",
+   "SERVERTIME" : "19 Sep 2024 - 11:36",
+   "URLHOST" : "https://biostat.app.vumc.org",
+   "SYSTEMWEB" : "System",
+   "NAMEFILTER" : "[\\\\\\s*?~^$@%`\"'&|<:;>\\[\\]#\\x00-\\x1f]",
+   "USERSWEB" : "Main",
+   "PUBURLPATH" : "/wiki/pub",
+   "WIKINAME" : "WikiGuest",
+   "USERNAME" : "guest",
+   "SCRIPTURL" : "https://biostat.app.vumc.org/wiki/bin",
+   "COOKIEREALM" : ""
+}
+</script>
+<script class='script JQUERYPLUGIN::METADATA' src='../pub/System/JQueryPlugin/plugins/metadata/jquery.metadata1446.js?version=2.1ef2bb44c86f5d0e98d55'></script>
+<script class='script JavascriptFiles/foswikiString' type="text/javascript" src="../pub/System/JavascriptFiles/foswikiString.js"></script>
+<script class='script JavascriptFiles/foswikiPref' type="text/javascript" src="../pub/System/JavascriptFiles/foswikiPref.js"></script>
+<script class='script JQUERYPLUGIN::TWISTY' src='../pub/System/TwistyPlugin/jquery.twisty327a.js?version=1.6.0'></script>
+<script class='script JQUERYPLUGIN::UI' src='../pub/System/JQueryPlugin/plugins/ui/jquery-uif90a.js?version=1.13.2'></script>
+<script class='script JQUERYPLUGIN::UI::AUTOCOMPLETE' src='../pub/System/JQueryPlugin/plugins/ui/jquery.ui.autocomplete.initf90a.js?version=1.13.2'></script>
+<script class='script JSCalendarContrib/calendar' src='../pub/System/JSCalendarContrib/calendar.js'></script>
+<script class='script JSCalendarContrib/calendar-lang' src='../pub/System/JSCalendarContrib/lang/calendar-en.js'></script>
+<script class='script JSCalendarContrib/foswiki' src='../pub/System/JSCalendarContrib/foswiki.js'></script>
+<script class='script JavascriptFiles/foswikiForm' type="text/javascript" src="../pub/System/JavascriptFiles/foswikiForm.js"></script>
+<script class='script JavascriptFiles/strikeone' type="text/javascript" src="../pub/System/JavascriptFiles/strikeone.js"></script>
+<script class='script PatternSkin/pattern' type="text/javascript" src="../pub/System/PatternSkin/pattern.js"></script>
+</head> 
+<body class="foswikiNoJs patternViewPage foswikiHasChangePermission foswikiGuest">
+<span id="PageTop"></span><div class="foswikiPage"><div id="patternScreen">
+<div id="patternPageShadow"><div id="patternTopBar">
+  <div id="patternTopBarContentsWrapper">
+	 <div id="patternTopBarContents">
+<table border="0" cellpadding="0" cellspacing="0" style="width:100%" summary="">
+<tr><td valign="middle"><span id="foswikiLogo" class="foswikiImage"><a href="WebHome.html"><img src="../pub/Main/SitePreferences/Lockup_VUMC_DeptofBiostatistics_COLORe.png" border="0" alt="Vanderbilt Biostatistics Home" style="border:none;" /></a></span></td>
+<td align="right" valign="top" class="patternMetaMenu">
+  <ul>
+     <li><form name="jumpForm" action="https://biostat.app.vumc.org/wiki/Main/SweaveTemplate">
+<input type="text" class="foswikiInputField foswikiDefaultText" name="topic" id="jumpFormField" title="Jump" size="size='18'" value="" />
+<script type="text/javascript">
+jQuery(function() {
+  $('#jumpFormField').autocomplete({
+    source: "https://biostat.app.vumc.org/wiki/System/JumpAutocompleteImpl?section=topic;skin=text;contenttype=application/json;web=all;",
+    select: function(event, ui) {
+      window.location.href = "https://biostat.app.vumc.org/wiki/" + ui.item.value;
+    }
+  });
+});
+</script>
+<noscript>&nbsp;<input type="submit" class="foswikiButton" size="5" name="submit" value="Jump" />&nbsp;</noscript></form></li>
+     <li><form name="quickSearchForm" action="https://biostat.app.vumc.org/wiki/Main/WebSearch"><input type="text" class="foswikiInputField foswikiDefaultText" title="Search" id="quickSearchBox" name="search" value="" size="18" /><input type="hidden" name="scope" value="all" /><input type="hidden" name="web" value="Main" /><noscript>&nbsp;<input type="submit" size="5" class="foswikiButton" name="submit" value="Search" />&nbsp;</noscript></form><div style="padding-top: 8px"><a href="../System/UserRegistration.html">Register</a> | <a href="https://biostat.app.vumc.org/wiki/bin/login?foswiki_origin=GET%2cview%2c/wiki/Main/SweaveTemplate">Log In</a></div></li>
+  </ul>
+<p></p>
+
+</td></tr></table></div>
+  </div>
+</div>
+<div id="patternPage">
+<div id="patternWrapper"><div id="patternOuter" class="clear">
+<div id="patternFloatWrap">
+<div id="patternMain"><div id="patternClearHeaderCenter"></div>
+<div id="patternMainContents"><div class="patternTop clear"><span class="patternHomePath foswikiLeft"><span class="patternHomePathTitle">You are here: </span><a href="../index.html">Vanderbilt Biostatistics Wiki</a><span class='foswikiSeparator'>&gt;</span><a href="WebHome.html">Main Web</a><span class='foswikiSeparator'>&gt;</span><a href="https://biostat.app.vumc.org/wiki/Main/Seminars">Seminars</a><span class='foswikiSeparator'>&gt;</span><a href="https://biostat.app.vumc.org/wiki/Main/RClinic">RClinic</a><span class='foswikiSeparator'>&gt;</span><a href="https://biostat.app.vumc.org/wiki/Main/SweaveLatex">SweaveLatex</a><span class='foswikiSeparator'>&gt;</span><a href="SweaveTemplate.html" title='Topic revision: 30 (01 Nov 2015 - 10:47:09)'>SweaveTemplate</a> <span class='patternRevInfo'>(01 Nov 2015, <a href="FrankHarrell.html">FrankHarrell</a>)</span></span><span class="patternToolBar foswikiRight"><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/edit/Main/SweaveTemplate?t=1726763814' rel='nofollow' title='Edit this topic text' >Edit </a><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/attach/Main/SweaveTemplate' rel='nofollow' title='Attach an image or document to this topic'>Attach</a><span></span></span></div><div class="foswikiContentHeader"></div><div class="patternContent"><div class="foswikiTopic"><div class="foswikiToc" id="foswikiTOC"> <ul>
+<li> <a href="#A_42NOTE_42:_SUPERCEDED_by_61knitr_61_and_LaTeX_Styles_61knitrl_61_and_61spaper_61_59_See_GitHub_61rlatex_61_Project"> NOTE: SUPERCEDED by knitr and LaTeX Styles knitrl and spaper;  See GitHub rlatex Project </a>
+</li> <li> <a href="#Using_LaTeX_Style_61Sweavel_61_124_https:_47_47biostat.app.vumc.org_47wiki_47pub_47Main_47SweaveTemplate_47template3.pdf_Output"> Using LaTeX Style Sweavel | https://biostat.app.vumc.org/wiki/pub/Main/SweaveTemplate/template3.pdf Output </a>
+</li> <li> <a href="#Using_61SweaveListingUtils_61_124_https:_47_47biostat.app.vumc.org_47wiki_47pub_47Main_47SweaveTemplate_47template.pdf_Output"> Using SweaveListingUtils | https://biostat.app.vumc.org/wiki/pub/Main/SweaveTemplate/template.pdf Output </a>
+</li> <li> <a href="#Using_LaTeX_61figure_61_Environments_for_Plots"> Using LaTeX figure Environments for Plots </a>
+</li></ul> 
+</div>
+<h1 id="Sweave_and_knitr_Templates">  Sweave and knitr Templates </h1>
+<h2 id="A_42NOTE_42:_SUPERCEDED_by_61knitr_61_and_LaTeX_Styles_61knitrl_61_and_61spaper_61_59_See_GitHub_61rlatex_61_Project">  <strong>NOTE</strong>: SUPERCEDED by <code>knitr</code> and LaTeX Styles <code>knitrl</code> and <code>spaper</code>;  See GitHub <code><a href="https://github.com/harrelfe/rlatex">rlatex</a></code> Project </h2>
+<h2 id="Using_LaTeX_Style_61Sweavel_61_124_https:_47_47biostat.app.vumc.org_47wiki_47pub_47Main_47SweaveTemplate_47template3.pdf_Output">  Using LaTeX Style <code>Sweavel</code> | <a href="https://biostat.app.vumc.org/wiki/pub/Main/SweaveTemplate/template3.pdf Output">https://biostat.app.vumc.org/wiki/pub/Main/SweaveTemplate/template3.pdf Output</a> </h2>
+The most advanced way to use <code>Sweave</code> is through the R package <code>SweaveListingUtils</code> (see the third approach on this page) which does things such as listing all the functions in all the attached packages and highlighting these function names in all R code listings.  <code>SweaveListingUtils</code> uses LaTeX's <code>listings</code> package to pretty-print R code.  The <code><a href="https://biostat.app.vumc.org/wiki/pub/Main/SweaveTemplate/Sweavel.sty Sweavel.sty">https://biostat.app.vumc.org/wiki/pub/Main/SweaveTemplate/Sweavel.sty Sweavel.sty</a></code> package for LaTeX uses <code>listings</code> similarly but provides an easier way to customize the output and does not need you to run an R function to set this up as <code>SweaveListingUtils</code> does.  <code>Sweavel</code> substitutes LaTeX <code>listings</code> package commands for the usual <code>Sweave</code> <code>Sinput</code> and <code>Soutput</code> environments.  Having <code>\usepackage{Sweavel}</code> in your <code>.Rnw</code> file will cause <code>Sweave</code> to not use its default style package <code>Sweave.sty</code>.  To install <code>Sweavel.sty</code> on your Linux/Unix system, download the <code>.sty</code> file (say to <code>/tmp</code>) and issue the following shell commands:
+<pre>
+sudo cp /tmp/Sweavel.sty /usr/share/R/share/texmf/.
+sudo mktexlsr
+</pre>
+Alternatively, copy the <code>.sty</code> file to your project directory, especially if you want to customize it and have the local copy override any system copy.<br>
+<img src="https://biostat.app.vumc.org/wiki/pub/System/DocumentGraphics/new.png" alt="NEW" title="NEW" width="30" height="16" /> <code>Sweavel.sty</code> was updated June 2015 to require only black and white, using a different method to distinguish inputs and outputs.
+<p class='p'></p>
+
+With this approach, you can easily have LaTeX commands inside your R code by enclosing the command inside (*  *).  This is particularly useful for symbolic references to sections, pages, figures, and tables without the document.  Here is a template using this approach.  <code>pdf</code> output is found at the link above.  There is a symbolic link to a section in the document in an R comment.
+<p></p>
+
+A pdf file with an advanced example along these lines is at <a href="https://biostat.app.vumc.org/wiki/Main/SweaveLatex">SweaveLatex</a>.
+<pre>
+&#37;Usage: R CMD Sweave template3.Rnw &#61; Sweave template3
+&#37;       rubber -d template3 or pdflatex template3
+&#37; To get .R file: R CMD Stangle template3.Rnw &#61; Stangle template3
+\documentclass{article}
+\usepackage{relsize,setspace}  &#37; used by latex(describe( ))
+\usepackage{needspace}
+\usepackage{url}               &#37; used in bibliography
+\usepackage&#91;superscript,nomove&#93;{cite} &#37; use if \cite is used and superscripts wanted
+&#37; Remove nomove if you want superscripts after punctuation in citations
+\usepackage{lscape}            &#37; for landscape mode tables
+\textwidth 6.75in              &#37; set dimensions before fancyhdr 
+\textheight 9.25in
+\topmargin -.875in
+\oddsidemargin -.125in
+\evensidemargin -.125in
+\usepackage{fancyhdr}          &#37; this and next line are for fancy headers/footers
+\pagestyle{fancy}
+\newcommand{\bc}{\begin{center}}  &#37; abbreviate
+\newcommand{\ec}{\end{center}}
+\newcommand{\code}&#91;1&#93;{{\smaller\texttt{#1}}}
+\newcommand{\R}{{\normalfont\textsf{R}}{}}
+
+\usepackage{Sweavel}
+&#37; Uncomment some of the following to use some alternatives:
+&#37; \def\Sweavesize{\normalsize}  (changes size of typeset R code and output)
+&#37; \def\Rcolor{\color{black}}
+&#37; \def\Routcolor{\color{green}}
+&#37; \def\Rcommentcolor{\color{red}}
+&#37; To change background color or R code and/or output, use e.g.:
+&#37; \def\Rbackground{\color{white}}
+&#37; \def\Routbackground{\color{white}}
+&#37; To use rgb specifications use \color&#91;rgb&#93;{ , , }
+&#37; To use gray scale use e.g. \color&#91;gray&#93;{0.5}
+&#37; If you change any of these after the first chunk is produced, the
+&#37; changes will have effect only for the next chunk.
+
+\SweaveOpts{keep.source&#61;TRUE}
+&#37; To produce both postscript and pdf graphics, remove the eps and pdf
+&#37; parameters in the next line.  Set default plot size to 6x4 in.
+\SweaveOpts{prefix.string&#61;graphics/plot, eps &#61; FALSE, pdf &#61; TRUE}
+\SweaveOpts{width&#61;5, height&#61;3.5}
+
+\title{An Analysis}
+\author{Jane Doe\\\smaller Department of Biostatistics\\\smaller Vanderbilt University School of Medicine}
+\begin{document}
+\maketitle
+&#37; Use the following 3 lines for long reports needing navigation
+\tableofcontents
+&#37;\listoftables
+&#37;\listoffigures     &#37; not used unless figure environments used
+&#60;&#60;echo&#61;f&#62;&#62;&#61;
+spar &#60;- function(mar&#61;c(3.25+bot-.45&#42;multi,3.5+left,.5+top+.25&#42;multi,.5+rt),
+                 lwd &#61; if(multi)1 else 1.75,
+                 mgp &#61; if(multi) c(1.5, .365, 0) else c(2.4-.4, 0.475, 0),
+                 tcl &#61; if(multi)-0.25 else -0.4,
+                 bot&#61;0, left&#61;0, top&#61;0, rt&#61;0, ps&#61;14,
+                 mfrow&#61;NULL, ...)
+  {
+    multi &#60;- length(mfrow) &#62; 0
+    par(mar&#61;mar, lwd&#61;lwd, mgp&#61;mgp, tcl&#61;tcl, ...)
+    if(multi) par(mfrow&#61;mfrow)
+  }
+options(SweaveHooks&#61;list(fig&#61;spar)) # run spar() before every plot
+options(prompt&#61;&#39;  &#39;,continue&#61;&#39;  &#39;)  # remove prompt characters at start of lines
+require(rms)
+&#64;
+
+\section{Descriptive Statistics}\label{descStats}
+&#60;&#60;results&#61;tex&#62;&#62;&#61;
+getHdata(support)   # Use Hmisc/getHdata to get dataset from VU DataSets wiki
+d &#60;- subset(support, select&#61;c(age,sex,race,edu,income,hospdead,slos,dzgroup,
+                       meanbp,hrt))
+latex(describe(d), file&#61;&#39;&#39;)
+&#64;
+Race is reduced to three levels (white, black, OTHER) because of low
+frequencies in other levels (minimum relative frequency set to 0.05).
+&#60;&#60;&#62;&#62;&#61;
+d &#60;- upData(d,
+            race &#61; combine.levels(race, minlev &#61; 0.05))
+&#64;
+
+\section{Redundancy Analysis and Variable Interrelationships}
+\bc
+&#37; Note: giving a chunk name to each code chunk that produces a figure
+&#37; makes it easy to know which plots to send to a collaborator, and
+&#37; will not allow numbered orphan plots to be left when code chunks are
+&#37; inserted into the file.  The default in Sweave is for plots to be
+&#37; numbered by the chunks producing them.
+
+&#60;&#60;vc,fig&#61;t&#62;&#62;&#61;
+v &#60;- varclus(~., data&#61;d)
+plot(v)
+redun(~age+sex+race+edu+income+dzgroup+meanbp+hrt, data&#61;d)
+# Alternative: redun(~., data&#61;subset(d, select&#61;-c(hospdead,slos)))
+&#64;
+\ec
+Note that the clustering of black with white is not interesting; this just means that these are mutually exclusive higher frequency categories, causing them to be negatively correlated.
+\section{Logistic Regression Model}
+Here we fit a tentative binary logistic regression model.  The
+coefficients are not very useful so they are not
+printed.  Note: the symbolic section reference below was created by the
+following \R\ comment:
+\begin{verbatim}
+# see Section (&#42;\ref{descStats}&#42;) for descriptive statistics
+\end{verbatim}
+The label was defined in an earlier section using
+\begin{verbatim}
+\section{Descriptive Statistics}\label{descStats}
+\end{verbatim}
+
+&#60;&#60;results&#61;tex,fig&#61;t,width&#61;7,height&#61;5&#62;&#62;&#61;
+dd &#60;- datadist(d); options(datadist&#61;&#39;dd&#39;)
+f &#60;- lrm(hospdead ~ rcs(age,4) + sex + race + dzgroup + rcs(meanbp,5),
+         data&#61;d) # see Section (&#42;\ref{descStats}&#42;) for descriptive statistics
+print(f, latex&#61;TRUE, coefs&#61;FALSE)
+latex(anova(f), where&#61;&#39;h&#39;, file&#61;&#39;&#39;)   # can also try where&#61;&#39;htbp&#39;
+print(plot(Predict(f)))
+&#64;
+
+\section{Test Calculations}
+\bc
+&#60;&#60;testp,fig&#61;t&#62;&#62;&#61;
+x &#60;- 3; y &#60;- 2
+if(x &#60;&#61; y) &#39;this&#39; else &#39;that&#39;
+if(y &#62;&#61; x) &#39;that&#39; else &#39;this&#39;
+x^y
+plot(runif(20),runif(20))
+&#64;
+\ec
+
+\section{Computing Environment}
+These analyses were done using the following versions of R\cite{Rsystem}, the
+operating system, and add-on packages \code{Hmisc}\cite{Hmisc},
+\code{rms}\cite{rrms}, and others:
+&#60;&#60;echo&#61;f,results&#61;tex&#62;&#62;&#61;
+toLatex(sessionInfo(), locale&#61;FALSE)
+&#64;
+
+&#37; Note: Rsystem reference is defined inside feh.bib.  It is a slightly
+&#37; edited version of the output of citation().
+\bibliography{/home/harrelfe/bib/feh.bib}
+\bibliographystyle{unsrt}
+&#37; Use \bibliographystyle{abbrv} if want references alphabetized
+\end{document}
+</pre>
+<p></p>
+
+<h2 id="Using_61SweaveListingUtils_61_124_https:_47_47biostat.app.vumc.org_47wiki_47pub_47Main_47SweaveTemplate_47template.pdf_Output">  Using <code>SweaveListingUtils</code> | <a href="https://biostat.app.vumc.org/wiki/pub/Main/SweaveTemplate/template.pdf Output">https://biostat.app.vumc.org/wiki/pub/Main/SweaveTemplate/template.pdf Output</a> </h2>
+This template assumes you have installed the R package <code>SweaveListingUtils</code>  which allows you to greatly beautify how the R code, comments, and output are typeset.  The LaTeX package <code>listings</code> is assumed to be installed on your system (it is on most).   Note that there is a Linux package <code>rubber</code> you can install that automatically runs <code>latex</code> and <code>bibtex</code> as many times as needed.  Run it using for example <code>rubber model</code> to compile <code>model.tex</code>.  Use <code>rubber -d model</code> to run <code>pdflatex</code> in place of <code>latex</code>.  
+<pre>
+&#37;Usage: R CMD Sweave template.Rnw
+&#37; Runs model.Rnw to produce template.tex and graphics files in graphics/
+&#37; latex or pdflatex template; bibtex template; latex or pdflatex template
+&#37; (leave out last two steps if there are no bibliographic citations,
+&#37; or automate with rubber -d template)
+&#37; To get .R file: Stangle template
+\documentclass{article}
+\usepackage{relsize,setspace}  &#37; used by latex(describe( ))
+\usepackage{url}               &#37; used in bibliography
+\usepackage&#91;superscript,nomove&#93;{cite} &#37; use if \cite is used and superscripts wanted
+&#37; Remove nomove if you want superscripts after punctuation in citations
+\usepackage{lscape}            &#37; for landscape mode tables
+\textwidth 6.75in              &#37; set dimensions before fancyhdr 
+\textheight 9.25in
+\topmargin -.875in
+\oddsidemargin -.125in
+\evensidemargin -.125in
+\usepackage{fancyhdr}          &#37; this and next line are for fancy headers/footers
+\pagestyle{fancy}
+\newcommand{\bc}{\begin{center}}  &#37; abbreviate
+\newcommand{\ec}{\end{center}}
+
+&#37; The next 10 lines are used if you are beautifying R code and output with SweaveListingUtils
+\usepackage{listings}
+\usepackage&#91;nogin&#93;{Sweave}
+&#37; Use nogin to respect height and width as specified below, otherwise all widths will be changed to 80&#37; of the text width
+\SweaveOpts{keep.source&#61;TRUE}
+&#60;&#60;&#60;SweaveListingspreparations, results&#61;tex, echo&#61;FALSE&#62;&#62;&#61;
+require(SweaveListingUtils)
+SweaveListingPreparations()
+spar &#60;- function(mar&#61;c(3.25+bot-.45&#42;multi,3.5+left,.5+top+.25&#42;multi,.5+rt),
+                 lwd &#61; if(multi)1 else 1.75,
+                 mgp &#61; if(multi) c(1.5, .365, 0) else c(2, 0.475, 0),
+                 tcl &#61; if(multi)-0.25 else -0.4,
+                 bot&#61;0, left&#61;0, top&#61;0, rt&#61;0, ps&#61;14,
+                 mfrow&#61;NULL, ...)
+  {
+    multi &#60;- length(mfrow) &#62; 0
+    par(mar&#61;mar, lwd&#61;lwd, mgp&#61;mgp, tcl&#61;tcl, ps&#61;ps, ...)
+    if(multi) par(mfrow&#61;mfrow)
+  }
+options(SweaveHooks&#61;list(fig&#61;spar)) # run spar() before every plot
+options(prompt&#61;&#39;  &#39;,continue&#61;&#39;  &#39;)  # remove prompt characters at start of lines
+&#64;
+
+&#37; To control colors, use something like the following:
+&#37; r &#60;- function(x) col2rgb(x)/255
+&#37; SweaveListingPreparations(Rcolor&#61;r(&#39;green&#39;), Rcomment&#61;r(&#39;red&#39;), Rout&#61;r(&#39;blue&#39;))
+&#37; For b+w documents use Rcolor&#61;r(&#39;black&#39;),Rcomment&#61;r(gray(.3)),Rout&#61;r(&#39;black&#39;)
+
+\title{An Analysis}
+\author{Jane Doe\\\smaller Department of Biostatistics\\\smaller Vanderbilt University School of Medicine}
+
+\begin{document}
+&#37; To produce both postscript and pdf graphics, remove the eps and pdf
+&#37; parameters in the next line.  Set default plot size to 6x4 in.
+\SweaveOpts{prefix.string&#61;graphics/plot, eps &#61; FALSE, pdf &#61; TRUE}
+\SweaveOpts{width&#61;6, height&#61;4}
+
+&#37;\setkeys{Gin}{width&#61;0.85\textwidth}  will undo width&#61;6, height&#61;4
+\maketitle
+&#37; Use the following 3 lines for long reports needing navigation
+\tableofcontents
+&#37;\listoftables
+&#37;\listoffigures     &#37; not used unless figure environments used
+&#37; results&#61;tex below makes SweaveListingUtils highlight function names in
+&#37; Hmisc and Design
+&#60;&#60;echo&#61;F,results&#61;tex&#62;&#62;&#61;
+options(Hverbose&#61;FALSE) # Silently load Hmisc and Design
+require(Design)
+# The following line is only needed if the prselect function is needed.
+# prselect will be added to the next version of Hmisc.  It allows for
+# selective deletion of R output in the report.
+source(&#39;http://biostat.mc.vanderbilt.edu/cgi-bin/viewvc.cgi/&#42;checkout&#42;/Hmisc/trunk/R/Misc.s&#39;)
+&#64;
+
+\section{Descriptive Statistics}
+&#60;&#60;results&#61;tex&#62;&#62;&#61;
+getHdata(support)   # Use Hmisc/getHdata to get dataset from VU DataSets wiki
+d &#60;- subset(support, select&#61;c(age,sex,race,edu,income,hospdead,slos,dzgroup,
+                       meanbp,hrt))
+latex(describe(d), file&#61;&#39;&#39;)
+&#64;
+Race is reduced to three levels (white, black, OTHER) because of low
+frequencies in other levels (minimum relative frequency set to 0.05).
+&#60;&#60;&#62;&#62;&#61;
+d &#60;- upData(d,
+            race &#61; combine.levels(race, minlev &#61; 0.05))
+&#64;
+
+\section{Redundancy Analysis and Variable Interrelationships}
+\bc
+&#37; Note: giving a chunk name to each code chunk that produces a figure
+&#37; makes it easy to know which plots to send to a collaborator, and
+&#37; will not allow numbered orphan plots to be left when code chunks are
+&#37; inserted into the file.  The default in Sweave is for plots to be
+&#37; numbered by the chunks producing them.
+&#60;&#60;vc,fig&#61;T&#62;&#62;&#61;
+v &#60;- varclus(~., data&#61;d)
+plot(v)
+redun(~age+sex+race+edu+income+dzgroup+meanbp+hrt, data&#61;d)
+# Alternative: redun(~., data&#61;subset(d, select&#61;-c(hospdead,slos)))
+&#64;
+\ec
+Note that the clustering of black with white is not interesting; this just means that these are mutually exclusive higher frequency categories, causing them to be negatively correlated.
+\section{Logistic Regression Model}
+Here we fit a tentative binary logistic regression model.  The
+coefficients are not very useful so they are not printed.
+&#60;&#60;z,eval&#61;FALSE,echo&#61;T&#62;&#62;&#61;
+dd &#60;- datadist(d); options(datadist&#61;&#39;dd&#39;)
+f &#60;- lrm(hospdead ~ rcs(age,4) + sex + race + dzgroup + rcs(meanbp,5),
+         data&#61;d)
+f
+&#60;&#60;echo&#61;F&#62;&#62;&#61;
+z &#60;- capture.output( {
+&#60;&#60;z&#62;&#62;
+   } )
+prselect(z, &#39;S.E.&#39;) # keep only summary stats; or:
+# prselect(z, stop&#61;&#39;S.E.&#39;, j&#61;-1)  # keep only coefficients
+&#64;
+&#60;&#60;results&#61;tex&#62;&#62;&#61;
+latex(anova(f), where&#61;&#39;h&#39;, file&#61;&#39;&#39;)   # can also try where&#61;&#39;htbp&#39;
+&#64;
+
+\section{Test Calculations}
+\bc
+&#60;&#60;testp,fig&#61;T&#62;&#62;&#61;
+x &#60;- 3; y &#60;- 2
+if(x &#60;&#61; y) &#39;this&#39; else &#39;that&#39;
+if(y &#62;&#61; x) &#39;that&#39; else &#39;this&#39;
+x^y
+plot(runif(20),runif(20))
+&#64;
+\ec
+
+\section{Computing Environment}
+These analyses were done using the following versions of R\cite{Rsystem}, the
+operating system, and add-on packages \code{Hmisc}\cite{Hmisc},
+\code{Design}\cite{Design}, and others:
+&#60;&#60;echo&#61;F,results&#61;tex&#62;&#62;&#61;
+toLatex(sessionInfo(), locale&#61;FALSE)
+&#64;
+
+&#37; Note: Rsystem reference is defined inside feh.bib.  It is a slightly
+&#37; edited version of the output of citation().
+\bibliography{/home/harrelfe/bib/feh.bib}
+\bibliographystyle{unsrt}
+&#37; Use \bibliographystyle{abbrv} if want references alphabetized
+\end{document}
+</pre>
+<p></p>
+
+If you have a master document that does not produce any R graphics, and a series of sections in separate <code>.Rnw</code> files, the master document can contain the setup up to but not including the definition of <code>spar</code>, and each separate <code>.Rnw</code> file to be <code>\input</code> from the master document should start with
+<pre>
+&#60;&#60;echo&#61;FALSE&#62;&#62;&#61;
+spar &#60;- function(mar&#61;c(3.25+bot-.45&#42;multi,3.5+left,.5+top+.25&#42;multi,.5+rt),
+                 lwd &#61; if(multi)1 else 1.75,
+                 mgp &#61; if(multi) c(1.5, .365, 0) else c(2.4-.4, 0.475, 0),
+                 tcl &#61; if(multi)-0.25 else -0.4,
+                 bot&#61;0, left&#61;0, top&#61;0, rt&#61;0, ps&#61;14,
+                 mfrow&#61;NULL, ...)
+  {
+    multi &#60;- length(mfrow) &#62; 0
+    par(mar&#61;mar, lwd&#61;lwd, mgp&#61;mgp, tcl&#61;tcl, ...)
+    if(multi) par(mfrow&#61;mfrow)
+  }
+options(SweaveHooks&#61;list(fig&#61;spar)) # run spar() before every plot
+options(prompt&#61;&#39;  &#39;,continue&#61;&#39;  &#39;)  # remove prompt characters at start of lines
+&#64;
+
+\SweaveOpts{prefix.string&#61;plot, eps &#61; FALSE, pdf &#61; TRUE, keep.source&#61;TRUE}
+\SweaveOpts{width&#61;6, height&#61;4}
+
+</pre>
+You may have to have <code>require</code> or <code>library</code> commands in each section, as you run each section separately using e.g. <code>R CMD Sweave section.Rnw</code>.
+<p></p>
+
+<h2 id="Using_LaTeX_61figure_61_Environments_for_Plots">  Using LaTeX <code>figure</code> Environments for Plots </h2>
+If you want plots to float, have captions, or you want to reference figures symbolically in your report (e.g., <code>See Figure \ref{myfig}</code>) you need to enclose the figures in a <code>figure</code> environment.  You can do this in standard <code>Sweave</code> by having <code>\begin{figure}</code> and <code>\end{figure}</code> enclose the code chunk, but this will put the <code>R</code> code at the top of the figure.  To have full control of the issue, use the following pattern.  If you are using <code>Sweave</code> to make a presentation, you will want figure setup and closure (<code>dev.off</code>) commands to be suppressed from the final <code>pdf</code> file.  This can be done by adding <code>#rm#</code> to any line you want to disappear, and running the <code>.tex</code> file created by <code>Sweave</code> through the <code><a href="https://biostat.app.vumc.org/wiki/pub/Main/SweaveTemplate/rmlines rmlines">https://biostat.app.vumc.org/wiki/pub/Main/SweaveTemplate/rmlines rmlines</a></code> shell script, e.g., <code>rmlines my.tex</code>. 
+<pre>
+&#37; Put the following in your master &#61;.tex&#61; or &#61;.Rnw&#61; file:
+&#37;\fg{basefilename}{label}{caption}
+\newcommand{\fg}&#91;3&#93;{\begin{figure}&#91;htbp&#93;&#37;
+        \leavevmode&#37;
+        \centerline{\includegraphics{#1}}&#37;
+        \caption{#3}&#37;
+        \label{#2}&#37;
+        \end{figure}}
+&#37;\fgh{basefilename}{label}{caption}{short caption for TOC}
+\newcommand{\fgh}&#91;4&#93;{\begin{figure}&#91;htbp&#93;&#37;
+        \leavevmode&#37;
+        \centerline{\includegraphics{#1}}&#37;
+        \caption&#91;#4&#93;{#3}&#37;
+        \label{#2}&#37;
+        \end{figure}}
+
+&#37; Put at the top of each &#61;.Rnw&#61; file:
+&#60;&#60;echo&#61;f&#62;&#62;&#61;
+ppdf &#60;- function(file, w&#61;4.5, h&#61;3, ...)   # set your own default height and width
+  {
+    pdf(paste(substitute(file),&#39;pdf&#39;,sep&#61;&#39;.&#39;), width&#61;w, height&#61;h)
+    # use e.g. paste(&#39;pdf/&#39;,substitute(file),&#39;.pdf&#39;,sep&#61;&#39;&#39;) to put in subdirectory
+    spar(...)
+  }
+doff &#60;- function() invisible(dev.off())   # invisible to prevent R output
+spar &#60;- function(mar&#61;c(3.25+bot-.45&#42;multi,3.5+left,.5+top+.25&#42;multi,.5+rt),
+                 lwd &#61; if(multi)1 else 1.75,
+                 mgp &#61; if(multi) c(1.5, .365, 0) else c(2.4-.4, 0.475, 0),
+                 tcl &#61; if(multi)-0.25 else -0.4,
+                 bot&#61;0, left&#61;0, top&#61;0, rt&#61;0, ps&#61;14,
+                 mfrow&#61;NULL, ...)
+  {
+    multi &#60;- length(mfrow) &#62; 0
+    par(mar&#61;mar, lwd&#61;lwd, mgp&#61;mgp, tcl&#61;tcl, ps&#61;ps, ...)
+    if(multi) par(mfrow&#61;mfrow)
+  }
+# Default: par(mar&#61;c(3.25,3.5,.5,.5))
+options(SweaveHooks&#61;list(fig&#61;spar)) # run spar() before every plot
+options(prompt&#61;&#39;  &#39;,continue&#61;&#39;  &#39;)  # remove prompt characters at start of lines
+&#64;
+
+# Make a plot.  File name will be summary.pdf in current working directory
+# Modify ppdf if you want to automatically put graphics in a subdirectory
+&#60;&#60;&#62;&#62;&#61;
+ppdf(summary)   #rm#
+# Use e.g. ppdf(summary, h&#61;4, w&#61;5) to change size or ppdf(myplot, mfrow&#61;c(1,2)) for multiple plots
+plot(f) # Figure \ref{zz}  &#91;note zz can be a single word or more than one word separated by .&#93;
+doff() #rm#
+&#64; 
+ # s2latx.pl called by Sweavev will automatically remove lines ending in doff() from the listing without needing #rm#
+\fg{summary}{zz}{Univariable summaries}
+</pre>
+<p></p>
+
+<hr />
+See also <a href="http://addictedtor.free.fr/misc/sweave">http://addictedtor.free.fr/misc/sweave</a> for results of Romain Francois' <code>highlight</code> approach. </div>
+<div class="foswikiContentFooter"></div><div class="foswikiFormSteps"><div class="foswikiAttachments foswikiFormStep" style="overflow:auto">
+<div class="twistyPlugin foswikiMakeVisible"><span id="topicattachmentslist1show" style="display:none" class="twistyRememberSetting twistyTrigger foswikiUnvisited twistyInited"><a class="patternTwistyButton" href="#"><img src="../pub/System/DocumentGraphics/toggleopen.png" border="0" alt="" /><span class="foswikiLinkLabel foswikiUnvisited">Attachments <span class='foswikiSmall foswikiGrayText'>6</span></span></a></span><span id="topicattachmentslist1hide" style="display:none" class="twistyRememberSetting twistyTrigger foswikiUnvisited twistyInited"><a class="patternTwistyButton" href="#"><img src="../pub/System/DocumentGraphics/toggleclose.png" border="0" alt="" /><span class="foswikiLinkLabel foswikiUnvisited">Attachments <span class='foswikiSmall foswikiGrayText'>6</span></span></a></span></div><div class="twistyPlugin"><div id="topicattachmentslist1toggle" style="" class="twistyRememberSetting twistyContent twistyInited">
+<table class="foswikiTable" id="tableSweaveTemplate1" rules="none">
+	<thead>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th class="foswikiTableCol0 foswikiFirstCol"> <a href="https://biostat.app.vumc.org/wiki/Main/SweaveTemplate?sortcol=0;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">I</a> </th>
+			<th class="foswikiTableCol1"> <a href="https://biostat.app.vumc.org/wiki/Main/SweaveTemplate?sortcol=1;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Attachment</a> </th>
+			<th class="foswikiTableCol2"> <a href="https://biostat.app.vumc.org/wiki/Main/SweaveTemplate?sortcol=2;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Action</a> </th>
+			<th class="foswikiTableCol3"> <a href="https://biostat.app.vumc.org/wiki/Main/SweaveTemplate?sortcol=3;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Size</a> </th>
+			<th class="foswikiTableCol4"> <a href="https://biostat.app.vumc.org/wiki/Main/SweaveTemplate?sortcol=4;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Date</a> </th>
+			<th class="foswikiTableCol5"> <a href="https://biostat.app.vumc.org/wiki/Main/SweaveTemplate?sortcol=5;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Who</a> </th>
+			<th class="foswikiTableCol6 foswikiLastCol"> <a href="https://biostat.app.vumc.org/wiki/Main/SweaveTemplate?sortcol=6;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Comment</a> </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class='foswikiIcon'><img src='../pub/System/DocumentGraphics/else.png' width='16' height='16' alt='Sweavel.sty' /></span><span class="foswikiHidden">sty</span> </td>
+			<td class="foswikiTableCol1"> <a href="https://biostat.app.vumc.org/wiki/pub/Main/SweaveTemplate/Sweavel.sty">Sweavel.sty</a> </td>
+			<td class="foswikiTableCol2"> <a href="https://biostat.app.vumc.org/wiki/bin/attach/Main/SweaveTemplate?filename=Sweavel.sty;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td class="foswikiTableCol3" style="text-align:right"> 3 K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">16 Oct 2015 - 16:50</span> </td>
+			<td class="foswikiTableCol5"> <a href="FrankHarrell.html">FrankHarrell</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Enhanced Sweave style for LaTeX, using LaTeX &#61;listings&#61; package </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class='foswikiIcon'><img src='../pub/System/DocumentGraphics/else.png' width='16' height='16' alt='Sweavev.sty' /></span><span class="foswikiHidden">sty</span> </td>
+			<td class="foswikiTableCol1"> <a href="https://biostat.app.vumc.org/wiki/pub/Main/SweaveTemplate/Sweavev.sty">Sweavev.sty</a> </td>
+			<td class="foswikiTableCol2"> <a href="https://biostat.app.vumc.org/wiki/bin/attach/Main/SweaveTemplate?filename=Sweavev.sty;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td class="foswikiTableCol3" style="text-align:right"> 2 K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">18 Jul 2009 - 09:20</span> </td>
+			<td class="foswikiTableCol5"> <a href="FrankHarrell.html">FrankHarrell</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Enhanced Sweave style for LaTeX using LaTeX &#61;fancyvrb&#61; package </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class='foswikiIcon'><img src='../pub/System/DocumentGraphics/else.png' width='16' height='16' alt='rmlines' /></span><span class="foswikiHidden">EXT</span> </td>
+			<td class="foswikiTableCol1"> <a href="https://biostat.app.vumc.org/wiki/pub/Main/SweaveTemplate/rmlines">rmlines</a> </td>
+			<td class="foswikiTableCol2"> <a href="https://biostat.app.vumc.org/wiki/bin/attach/Main/SweaveTemplate?filename=rmlines;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td class="foswikiTableCol3" style="text-align:right"> 142 bytes </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">18 Jul 2009 - 09:03</span> </td>
+			<td class="foswikiTableCol5"> <a href="FrankHarrell.html">FrankHarrell</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Shell script for removing lines in a file that contain #rm# </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class='foswikiIcon'><img src='../pub/System/DocumentGraphics/pdf.png' width='16' height='16' alt='template.pdf' /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="https://biostat.app.vumc.org/wiki/pub/Main/SweaveTemplate/template.pdf">template.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="https://biostat.app.vumc.org/wiki/bin/attach/Main/SweaveTemplate?filename=template.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td class="foswikiTableCol3" style="text-align:right"> 143 K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">14 Jun 2009 - 23:10</span> </td>
+			<td class="foswikiTableCol5"> <a href="FrankHarrell.html">FrankHarrell</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Result of R CMD Sweave template.Rnw then rubber -d template </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class='foswikiIcon'><img src='../pub/System/DocumentGraphics/pdf.png' width='16' height='16' alt='template3.pdf' /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="https://biostat.app.vumc.org/wiki/pub/Main/SweaveTemplate/template3.pdf">template3.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="https://biostat.app.vumc.org/wiki/bin/attach/Main/SweaveTemplate?filename=template3.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td class="foswikiTableCol3" style="text-align:right"> 318 K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">19 Mar 2011 - 10:04</span> </td>
+			<td class="foswikiTableCol5"> <a href="FrankHarrell.html">FrankHarrell</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> Example report using the &#61;Sweavel&#61; LaTeX style template </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> <span class='foswikiIcon'><img src='../pub/System/DocumentGraphics/pdf.png' width='16' height='16' alt='templatep.pdf' /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1 foswikiLast"> <a href="https://biostat.app.vumc.org/wiki/pub/Main/SweaveTemplate/templatep.pdf">templatep.pdf</a> </td>
+			<td class="foswikiTableCol2 foswikiLast"> <a href="https://biostat.app.vumc.org/wiki/bin/attach/Main/SweaveTemplate?filename=templatep.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td class="foswikiTableCol3 foswikiLast" style="text-align:right"> 163 K </td>
+			<td class="foswikiTableCol4 foswikiLast"> <span class="foswikiNoBreak">28 Jun 2009 - 10:19</span> </td>
+			<td class="foswikiTableCol5 foswikiLast"> <a href="FrankHarrell.html">FrankHarrell</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol foswikiLast"> Result of pdflatex --shell-escape templatep; using Sweavel style </td>
+		</tr>
+	</tbody></table>
+</div></div></div><div class="patternTopicActions foswikiFormStep"><span class="patternActionButtons"><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/edit/Main/SweaveTemplate?t=1726763814' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit </a><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/attach/Main/SweaveTemplate' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='https://biostat.app.vumc.org/wiki/Main/SweaveTemplate?cover=print;' rel='nofollow' title='Printable version of this topic' accesskey='p'><span class='foswikiAccessKey'>P</span>rint version</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/oops/Main/SweaveTemplate?template=oopshistory' rel='nofollow' title='View complete topic history' accesskey='h'><span class='foswikiAccessKey'>H</span>istory</a>: r30&nbsp;<a href="https://biostat.app.vumc.org/wiki/bin/compare/Main/SweaveTemplate?rev1=29;rev2=30" rel="nofollow">&lt;</a>&nbsp;<a href="https://biostat.app.vumc.org/wiki/Main/SweaveTemplate?rev=29" rel="nofollow">r29</a>&nbsp;<a href="https://biostat.app.vumc.org/wiki/bin/compare/Main/SweaveTemplate?rev1=28;rev2=29" rel="nofollow">&lt;</a>&nbsp;<a href="https://biostat.app.vumc.org/wiki/Main/SweaveTemplate?rev=28" rel="nofollow">r28</a>&nbsp;<a href="https://biostat.app.vumc.org/wiki/bin/compare/Main/SweaveTemplate?rev1=27;rev2=28" rel="nofollow">&lt;</a>&nbsp;<a href="https://biostat.app.vumc.org/wiki/Main/SweaveTemplate?rev=27" rel="nofollow">r27</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='https://biostat.app.vumc.org/wiki/Main/SweaveTemplate?template=backlinksweb' rel='nofollow' title='Search the Main Web for topics that link to here' accesskey='b'><span class='foswikiAccessKey'>B</span>acklinks</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='https://biostat.app.vumc.org/wiki/Main/SweaveTemplate?raw=on' rel='nofollow' title='View without formatting' accesskey='v'><span class='foswikiAccessKey'>V</span>iew wiki text</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/edit/Main/SweaveTemplate?t=1726763814;nowysiwyg=1' rel='nofollow' title='Edit Wiki text' accesskey='w'>Edit <span class='foswikiAccessKey'>w</span>iki text</a><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='https://biostat.app.vumc.org/wiki/Main/SweaveTemplate?template=more&amp;maxrev=30&amp;currrev=30' rel='nofollow' title='Delete or rename this topic; set parent topic; view and compare revisions' accesskey='m'><span class='foswikiAccessKey'>M</span>ore topic actions</a></span></span></div></div></div><div class="patternInfo"><span class="patternRevInfo">Topic revision: r30 - 01 Nov 2015, <a href="FrankHarrell.html">FrankHarrell</a></span></div>
+</div>
+</div><div id="patternSideBar"><div id="patternClearHeaderLeft"></div>
+<div id="patternSideBarContents"><div class="patternWebIndicator">
+<a href='WebHome.html'>Main</a>
+</div> <ul>
+<li> <strong><a href="https://www.vumc.org/biostatistics/">Department Home Page</a></strong>
+</li></ul> 
+<hr /> <ul>
+<li> <strong><a href="http://www.vanderbilt.edu/biostatistics/graduate/">Biostatistics Graduate Program</a></strong>
+</li></ul> 
+<hr /> <ul>
+<li> <strong><a href="https://www.vumc.org/">Vanderbilt University Medical Center</a></strong>
+</li></ul> 
+<hr /> <ul>
+<li> <strong>Main Web</strong>
+</li> <li> <a class="foswikiCurrentWebHomeLink" href="WebHome.html">Main Web Home</a>
+</li> <li> <a href="WebSearch.html">Search</a>
+</li> <li> <a href="WebChanges.html">Recent Changes</a>
+</li> <li> <a href="../bin/changes/Main.html">Changes</a>
+</li> <li> <a href="WebIndex.html">Topic list</a>
+</li></ul> 
+<hr /> <ul>
+<li> <strong>Biostatistics Webs</strong> <ul>
+<li> <a href="../Archive/WebHome.html">Archive</a>
+</li> <li> <a class="foswikiCurrentWebHomeLink" href="WebHome.html">Main</a>
+</li> <li> <a href="../Sandbox/WebHome.html">Sandbox</a>
+</li> <li> <a href="../System/WebHome.html">System</a>
+</li></ul> 
+</li></ul> 
+<p class='p'></p>
+
+<p class='p'></p>
+
+</div></div>
+</div>
+</div></div><div id="patternBottomBar"><div id="patternBottomBarContents"><div id="patternWebBottomBar"><span class="foswikiRight"> <a href="http://foswiki.org/"><img src="../pub/System/ProjectLogos/foswiki-badge.png" alt="This site is powered by Foswiki" title="This site is powered by Foswiki" /></a></span>Copyright &amp;© 2013-2022 by the contributing authors. All material on this collaboration platform is the property of the contributing authors. <br /> Ideas, requests, problems regarding Vanderbilt Biostatistics Wiki? <a href='mailto:biostat-it@vumc.org?subject=Vanderbilt Biostatistics Wiki%20Feedback%20on%20Main.SweaveTemplate'>Send feedback</a></div></div></div>
+</div>
+</div>
+</div>
+</div></body>
+<!-- Mirrored from biostat.app.vumc.org/wiki/Main/SweaveTemplate by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Sep 2024 16:39:43 GMT -->
+</html>

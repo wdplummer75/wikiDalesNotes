@@ -1,0 +1,4 @@
+alias eth0 e100
+alias ath0 ath_pci
+alias sound-slot-0 i810_audio
+install agpgart /sbin/modprobe --ignore-install agpgart; /sbin/modprobe intel-agp; /sbin/modprobe i830

@@ -1,0 +1,450 @@
+[_SID_]
+Version=9.1
+Revision=9.1.3
+Platform=WINDOWS
+Platform_long=Microsoft Windows Professional  
+Order=350411
+SID_schema=2
+restricted_loc=false
+SID_header=SAS 9.1.3
+x64=0
+[_Info_]
+[_FileData_]
+$_Filename=indexfile.txt
+$_Path=.\
+$_Date=
+$_Time=
+$_Stream=-------------------- BEGIN --------------------
+indexfile.txt
+sas91_350411.txt
+
+$_Stream=--------------------- END ---------------------
+$_Filename=tletter.txt
+$_Path=.\
+$_Date=
+$_Time=
+$_Stream=-------------------- BEGIN --------------------
+Microsoft Windows Professional  
+Education Analytical Suite	August 31, 2009
+Base SAS Software	August 31, 2009
+SAS Integration Technologies Software	 
+SAS OnlineTutor Basic and Intermediate SAS	 
+SAS OnlineTutor Advanced	 
+SAS/ACCESS Interface to Teradata Software	 
+SAS/ACCESS Interface to DB2 Software	 
+SAS/ACCESS Interface to MySQL	 
+SAS/ACCESS Interface to ODBC Software	 
+SAS/ACCESS Interface to OLE DB Software	 
+SAS/ACCESS Interface to ORACLE Software	 
+SAS/ACCESS Interface to PC Files Software	 
+SAS/ACCESS Interface to SYBASE Software	 
+SAS/AF Software	 
+SAS/ASSIST Software	 
+SAS/CONNECT Software	 
+SAS/EIS Software	 
+SAS Bridge for ESRI	 
+SAS/ETS Software	 
+SAS/FSP Software	 
+SAS/GRAPH Software	 
+SAS/IML Software	 
+SAS/INSIGHT Software	 
+SAS/LAB Software	 
+SAS/OR Software	 
+SAS/QC Software	 
+SAS/SECURE for Windows Software	 
+SAS/SHARE Software	 
+SAS/STAT Software	 
+SAS/Genetics	August 31, 2009
+SAS/GIS Software	August 31, 2009
+SAS/SPECTRAVIEW Software	August 31, 2009
+
+$_Stream=--------------------- END ---------------------
+$_Filename=setinit.sss
+$_Path=sas\core\sasinst\
+$_Date=
+$_Time=
+$_Stream=-------------------- BEGIN --------------------
+PROC SETINIT RELEASE='9.1';
+SITEINFO NAME='VANDERBILT UNIVERSITY-T&R'
+SITE=11765001 OSNAME='WIN' RECREATE WARN=45 GRACE=45
+BIRTHDAY='24JUL2008'D  EXPIRE='31AUG2009'D PASSWORD=471676801;
+CPU MODEL=' ' MODNUM=' ' SERIAL=' ' NAME=CPU000;
+EXPIRE 'PRODNUM000' 'PRODNUM001' 'PRODNUM002' 'PRODNUM003'
+       'PRODNUM004' 'PRODNUM005' 'PRODNUM006' 'PRODNUM007' 'PRODNUM008'
+       'PRODNUM010' 'PRODNUM012' 'PRODNUM013' 'PRODNUM015' 'PRODNUM018'
+       'PRODNUM025' 'PRODNUM028' 'PRODNUM032' 'PRODNUM035' 'PRODNUM070'
+       'PRODNUM075' 'PRODNUM095' 'PRODNUM117' 'PRODNUM123' 'PRODNUM164'
+       'PRODNUM165' 'PRODNUM166' 'PRODNUM167' 'PRODNUM192' 'PRODNUM194'
+       'PRODNUM204' 'PRODNUM208' 'PRODNUM209' 'PRODNUM215' 'PRODNUM219'
+       'PRODNUM225' '31AUG2009'D / CPU=CPU000;
+SAVE; RUN;
+
+$_Stream=--------------------- END ---------------------
+$_Filename=compinfo.dat
+$_Path=sas\core\sasinst\reserved\
+$_Date=
+$_Time=
+$_Stream=-------------------- BEGIN --------------------
+[SeparatelylicensedComponents]
+Comp1=gis
+Comp2=sview
+Comp3=gismaps
+Comp4=sas
+Comp5=base
+Comp6=maps
+Comp7=4A
+Comp8=7N
+
+$_Stream=--------------------- END ---------------------
+$_Filename=misc.txt
+$_Path=.\
+$_Date=
+$_Time=
+$_Stream=-------------------- BEGIN --------------------
+[CDSetInfo]
+CDSetVersion=0
+StrictVerChk=0
+
+$_Stream=--------------------- END ---------------------
+$_Filename=sas.ini
+$_Path=sas\core\sasinst\data\
+$_Date=
+$_Time=
+$_Stream=-------------------- BEGIN --------------------
+[Component]
+Filter=SAS,SAW
+Visible=1
+Media=cd101.id
+MediaLabel=Software Disk 1
+Parent=ROOT
+ProcessOrder=900
+Component=sas:SAS 9.1:SAS 9.1 for Windows:0
+Prereq1=base:REQUIRED|SHOW
+Prereq2=abmadaptsap
+Prereq3=abmprocabc
+Prereq4=abmprofmva
+Prereq5=af
+Prereq6=antimnylndda
+Prereq7=assist
+Prereq8=baan
+Prereq9=bissupp
+Prereq10=connect
+Prereq11=creditscrnod
+Prereq12=db2
+Prereq13=delete:HIDE
+Prereq14=delete_server:HIDE
+Prereq15=detectionclt
+Prereq16=detectionsvr
+Prereq17=di
+Prereq18=dipca
+Prereq19=dipcl
+Prereq20=dippr
+Prereq21=dquality
+Prereq22=eis
+Prereq23=ets
+Prereq24=finance
+Prereq25=forecastmva
+Prereq26=fsp
+Prereq27=gis
+Prereq28=gismaps
+Prereq29=graph
+Prereq30=hmdamva
+Prereq31=hpf
+Prereq32=iml
+Prereq33=insight
+Prereq34=intrnet
+Prereq35=inttech
+Prereq36=itmadaptsap
+Prereq37=itmsmvadata
+Prereq38=itslm
+Prereq39=lab
+Prereq40=lastdisk:REQUIRED
+Prereq41=ma
+Prereq42=maps
+Prereq43=mddbserv
+Prereq44=mktopt
+Prereq45=mmserver
+Prereq46=mysql
+Prereq47=neoview
+Prereq48=netezza
+Prereq49=odbc
+Prereq50=oledb
+Prereq51=or
+Prereq52=oracle
+Prereq53=ormonitormva
+Prereq54=orvar
+Prereq55=pcfile
+Prereq56=peosoft
+Prereq57=pkoptsassrv
+Prereq58=policymva
+Prereq59=procurement
+Prereq60=qc
+Prereq61=r3
+Prereq62=reinstal:REQUIRED
+Prereq63=reporter
+Prereq64=sapbw
+Prereq65=scorecard
+Prereq66=share
+Prereq67=shrbndls:REQUIRED
+Prereq68=sizepsassrv
+Prereq69=soladaptsap
+Prereq70=soltnsdata
+Prereq71=srmsrcdqual
+Prereq72=stat
+Prereq73=sview
+Prereq74=sybase
+Prereq75=teradata
+Prereq76=tmine
+Prereq77=toolkt
+Prereq78=txtminbok
+Prereq79=txtminchs
+Prereq80=txtmincht
+Prereq81=txtmindan
+Prereq82=txtmindut
+Prereq83=txtminfin
+Prereq84=txtminfre
+Prereq85=txtminger
+Prereq86=txtminita
+Prereq87=txtminjap
+Prereq88=txtminkor
+Prereq89=txtminpor
+Prereq90=txtminspa
+Prereq91=txtminswe
+Prereq92=vca
+Prereq93=weba
+Prereq94=webdatasrv
+Prereq95=whouse
+Prereq96=wrtyanlmva
+
+[Icons]
+Icon1=RunSAS
+Icon2=RunSASIQ
+Icon3=RunSASQDoc
+
+
+[Icons]
+Icon1=RunSAS
+Icon2=RunSASIQ
+Icon3=RunSASQDoc
+
+[RunSAS]
+FolderType=PROGRAMS
+ProgramFolder=SAS
+Name=SAS 9.1
+CommandLine="<TARGETDIR>\sas.exe"
+DefaultConfig=1
+Args=
+WorkingDir=%USERPROFILE%
+IconFile="<TARGETDIR>\sas.exe"
+IconIndex=
+ShortCutKey=
+GroupType=COMMON
+
+[RunSASIQ]
+FolderType=PROGRAMS
+ProgramFolder=SAS\SAS 9.1 Utilities
+Name=SAS Installation Qualification Tool
+CommandLine="<SASROOT>\sastest\sasiq.exe"
+DefaultConfig=0
+Args=
+WorkingDir="<SASROOT>\sastest"
+IconFile="<SASROOT>\sastest\sasiq.exe"
+IconIndex=
+ShortCutKey=
+GroupType=COMMON
+
+[RunSASQDoc]
+FolderType=PROGRAMS
+ProgramFolder=SAS\SAS 9.1 Utilities
+Name=SAS Qualification Tools User's Guide
+CommandLine="<SASROOT>\doc\0009\qualification_tools_guide.pdf"
+DefaultConfig=0
+Args=
+WorkingDir=%USERPROFILE%
+IconFile="<SASROOT>\doc\0009\qualification_tools_guide.pdf"
+IconIndex=
+ShortCutKey=
+GroupType=COMMON
+
+$_Stream=--------------------- END ---------------------
+$_Filename=media.txt
+$_Path=ssncd\
+$_Date=
+$_Time=
+$_Stream=-------------------- BEGIN --------------------
+sassetup1cd:SAS Setup Disk
+srvpakwin1cd:Service Pack 4 for SAS Foundation
+sharedcomp1cd:SAS Shared Components
+srvpakall1cd:Service Pack 4 Installer
+secure1cd:SAS/SECURE
+ssncd:SAS Software Navigator
+config1cd:SAS Configuration and Management - Volume 1
+srwizard1cd:System Requirements Wizard
+mid1cd:SAS Mid-Tier Components
+mid5cd:SAS OnlineDoc for the Web
+client1cd:SAS Client-Side Components Volume 1
+client2cd:SAS Client-Side Components Volume 2
+client21cd:SAS Client-Side Components Volume 3
+client35cd:SAS Client-Side Components Volume 4
+client12cd:SAS OnlineDoc for Windows
+client8cd:SAS Enterprise Guide
+client14cd:SAS OnlineTutor: Basic and Intermediate SAS
+client15cd:SAS OnlineTutor: Advanced SAS
+client41cd:SAS OnlineTutor: Business Intelligence
+configts1cd:SAS Configuration Troubleshooter
+thirdpty1cd:Third Party Software Components - Volume 1
+thirdpty2cd:Third Party Software Components - Volume 2
+thirdpty3cd:Java Runtime Environments for SAS - Volume 1
+thirdpty4cd:Java Runtime Environments for SAS - Volume 2
+
+$_Stream=--------------------- END ---------------------
+$_Filename=showit.txt
+$_Path=ssncd\
+$_Date=
+$_Time=
+$_Stream=-------------------- BEGIN --------------------
+overview
+media
+sasplatform
+eduanalytic
+geneticsbndl
+
+$_Stream=--------------------- END ---------------------
+$_Filename=orderable12byte.txt
+$_Path=.\
+$_Date=
+$_Time=
+$_Stream=-------------------- BEGIN --------------------
+# Order of Variables: 12byte, orderable, installable, planEnabled, Orderables, isServer
+EDUANALYTIC   1  0  0  0  0 
+BASE          1  1  0  0  0 
+INTTECH       1  1  0  0  0 
+ONLINETUTOR   1  1  0  0  0 
+ONLINETUTORA  1  1  0  0  0 
+TERADATA      1  1  0  0  0 
+DB2           1  1  0  0  0 
+MYSQL         1  1  0  0  0 
+ODBC          1  1  0  0  0 
+OLEDB         1  1  0  0  0 
+ORACLE        1  1  0  0  0 
+PCFILE        1  1  0  0  0 
+SYBASE        1  1  0  0  0 
+AF            1  1  0  0  0 
+ASSIST        1  1  0  0  0 
+CONNECT       1  1  0  0  0 
+EIS           1  1  0  0  0 
+ESRIBRIDGE    1  1  0  0  0 
+ETS           1  1  0  0  0 
+FSP           1  1  0  0  0 
+GRAPH         1  1  0  0  0 
+IML           1  1  0  0  0 
+INSIGHT       1  1  0  0  0 
+LAB           1  1  0  0  0 
+OR            1  1  0  0  0 
+QC            1  1  0  0  0 
+SECUREWIN     1  1  0  0  0 
+SHARE         1  1  0  0  0 
+STAT          1  1  0  0  0 
+GENETICSBNDL  1  0  0  0  0 
+GIS           1  1  0  0  0 
+SPECTRAVIEW   1  1  0  0  0 
+EGUIDE        1  1  0  0  0 
+
+$_Stream=--------------------- END ---------------------
+$_Filename=7n.ini
+$_Path=sas\core\sasinst\data\
+$_Date=
+$_Time=
+$_Stream=-------------------- BEGIN --------------------
+[Component]
+Filter=SAS,SAW
+Media=cd101.id
+MediaLabel=Software Disk 1
+Parent=ROOT
+ProcessOrder=901
+Component=7N:SAS/Genetics:SAS/Geneti:0
+Prereq1=lastdisk:REQUIRED
+Prereq2=reinstal:REQUIRED
+Prereq3=shrbndls:REQUIRED
+Prereq4=delete:HIDE
+Prereq5=delete_server:HIDE
+Prereq6=genetics:REQUIRED
+Prereq7=graph:REQUIRED
+Prereq8=base:REQUIRED
+
+[Icons]
+Icon1=RunSAS
+
+[RunSAS]
+FolderType=PROGRAMS
+ProgramFolder=SAS
+Name=SAS 9.1
+CommandLine="<TARGETDIR>\sas.exe"
+DefaultConfig=1
+Args= 
+WorkingDir=%USERPROFILE%
+IconFile="<TARGETDIR>\sas.exe"
+IconIndex=
+ShortCutKey=
+GroupType=COMMON 
+$_Stream=--------------------- END ---------------------
+$_Filename=4a.ini
+$_Path=sas\core\sasinst\data\
+$_Date=
+$_Time=
+$_Stream=-------------------- BEGIN --------------------
+[Component]
+Filter=SAS,SAW
+Media=cd101.id
+MediaLabel=Software Disk 1
+Parent=ROOT
+ProcessOrder=901
+Component=4A:Education Analytical Suite:Education :0
+Prereq1=lastdisk:REQUIRED
+Prereq2=reinstal:REQUIRED
+Prereq3=shrbndls:REQUIRED
+Prereq4=delete:HIDE
+Prereq5=delete_server:HIDE
+Prereq6=af:REQUIRED
+Prereq7=assist:REQUIRED
+Prereq8=connect:REQUIRED
+Prereq9=db2:REQUIRED
+Prereq10=eis:REQUIRED
+Prereq11=ets:REQUIRED
+Prereq12=fsp:REQUIRED
+Prereq13=graph:REQUIRED
+Prereq14=inttech:REQUIRED
+Prereq15=insight:REQUIRED
+Prereq16=lab:REQUIRED
+Prereq17=iml:REQUIRED
+Prereq18=oracle:REQUIRED
+Prereq19=odbc:REQUIRED
+Prereq20=oledb:REQUIRED
+Prereq21=or:REQUIRED
+Prereq22=pcfile:REQUIRED
+Prereq23=qc:REQUIRED
+Prereq24=sybase:REQUIRED
+Prereq25=share:REQUIRED
+Prereq26=securwin:REQUIRED
+Prereq27=stat:REQUIRED
+Prereq28=mysql:REQUIRED
+Prereq29=teradata:REQUIRED
+Prereq30=base:REQUIRED
+
+[Icons]
+Icon1=RunSAS
+
+[RunSAS]
+FolderType=PROGRAMS
+ProgramFolder=SAS
+Name=SAS 9.1
+CommandLine="<TARGETDIR>\sas.exe"
+DefaultConfig=1
+Args= 
+WorkingDir=%USERPROFILE%
+IconFile="<TARGETDIR>\sas.exe"
+IconIndex=
+ShortCutKey=
+GroupType=COMMON 
+$_Stream=--------------------- END ---------------------
+[_EOF_]

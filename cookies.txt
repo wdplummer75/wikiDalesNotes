@@ -1,0 +1,7 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+biostat.app.vumc.org	TRUE	/	FALSE	1999999999	SFOSWIKISID	3749243c575f5711866118ef593fd75a
+biostat.app.vumc.org	TRUE	/	FALSE	1999999999	FOSWIKISTRIKEONE	82e97e4f632449311f94c93035a23aad
+biostat.app.vumc.org	TRUE	/	FALSE	1999999999	SameSite	Lax
+biostat.app.vumc.org	TRUE	/	FALSE	1999999999	TS01d27342	01d55540b688a98c7195d74c1713b50bcf34d9889f4d9909627de3a1db9e7c9ac7b93cea32878c57be1b57c81fc424ae3d1c363cc8a75695ed1daec91b21189deca7675935e778848d4bd5e8cc00e180a7dc1f6ebf
+

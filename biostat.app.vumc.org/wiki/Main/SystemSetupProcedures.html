@@ -1,0 +1,474 @@
+<!DOCTYPE html><html lang="en">
+
+<!-- Mirrored from biostat.app.vumc.org/wiki/Main/SystemSetupProcedures by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Sep 2024 16:39:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<title> SystemSetupProcedures &lt; Main &lt; Vanderbilt Biostatistics Wiki</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, user-scalable=yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="icon" href="../pub/Main/SitePreferences/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../pub/Main/SitePreferences/favicon.ico" type="image/x-icon" />
+<link rel="alternate" href="https://biostat.app.vumc.org/wiki/bin/edit/Main/SystemSetupProcedures?t=1726763792" type="application/x-wiki" title="edit SystemSetupProcedures" />
+<meta name="TEXT_NUM_TOPICS" content="Number of topics:" />
+<meta name="TEXT_MODIFY_SEARCH" content="Modify search" />
+
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="WebRss" />
+<base  /><!--[if IE]></base><![endif]-->
+<link rel='stylesheet' href='https://biostat.app.vumc.org/wiki/pub/System/PageOptimizerPlugin/cache/76ea346e610aea74367a807e2dd00ef6.css' class='JQUERYPLUGIN::THEME JSCalendarContrib/calendar-large SMILIESPLUGIN head' media='all' />
+<style> .calendar {z-index:2000;}</style>
+
+<style class='head TABLEPLUGIN_default' type="text/css" media="all">
+body .foswikiTable {border-width:1px}
+body .foswikiTable .tableSortIcon img {padding-left:.3em; vertical-align:text-bottom}
+body .foswikiTable td {border-style:solid none; vertical-align:top}
+body .foswikiTable th {border-style:none solid; vertical-align:top; background-color:#d6d3cf; color:#000000}
+body .foswikiTable th a:link {color:#000000}
+body .foswikiTable th a:visited {color:#000000}
+body .foswikiTable th a:hover {color:#000000; background-color:#d6d3cf}
+body .foswikiTable th.foswikiSortedCol {background-color:#c4c1ba}
+body .foswikiTable tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+body .foswikiTable tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f7f7f6}
+body .foswikiTable tr.foswikiTableRowdataBg1 td {background-color:#f7f7f6}
+body .foswikiTable tr.foswikiTableRowdataBg1 td.foswikiSortedCol {background-color:#f0f0ee}
+</style>
+
+<style type="text/css" media="all">
+	/* Styles that are set using variables */
+	.patternBookView .foswikiTopRow,
+	.patternWebIndicator,
+	.patternWebIndicator a {
+		background-color:#9b031e;
+	}
+	#patternTopBarContents { background-image:url(../pub/Main/SitePreferences/top_bar_gradient.png); background-repeat:repeat-x;}
+#patternTopBarContents { background-color:#FFFFFF;}
+.patternBookView {
+	border-color:#9b031e;
+}
+.patternPreviewPage #patternMain {
+	/* uncomment to set the preview image */
+	/*background-image:url("/wiki/pub/System/PreviewBackground/preview2bg.gif");*/
+}
+</style>
+<link rel='stylesheet' href='../pub/System/PatternSkin/print.css' media='print' type='text/css' />
+
+<script class='script JQUERYPLUGIN' src='../pub/System/JQueryPlugin/jquery-2.2.4.js'></script>
+<script class='script JQUERYPLUGIN::OBSERVER' src='../pub/System/JQueryPlugin/plugins/observer/observer4abf.js?version=0.1'></script>
+<script class='script JQUERYPLUGIN::MIGRATE' src='../pub/System/JQueryPlugin/plugins/migrate/jquery.migrate4152.js?version=3.4.0'></script>
+<script class='script JQUERYPLUGIN::FOSWIKI' src='../pub/System/JQueryPlugin/plugins/foswiki/jquery.foswikiae26.js?version=3.10'></script>
+<script class='script JQUERYPLUGIN::BROWSER' src='../pub/System/JQueryPlugin/plugins/browser/jquery.browser72db.js?version=0.1.0'></script>
+<script class='script JQUERYPLUGIN::EASING' src='../pub/System/JQueryPlugin/plugins/easing/jquery.easing7c6c.js?version=1.3'></script>
+<script class='script JQUERYPLUGIN::FOSWIKI::PREFERENCES foswikiPreferences' type='text/json'>{
+   "SCRIPTURLPATHS" : {
+      "view" : "/wiki"
+   },
+   "PUBURL" : "https://biostat.app.vumc.org/wiki/pub",
+   "TOPIC" : "SystemSetupProcedures",
+   "WIKIUSERNAME" : "Main.WikiGuest",
+   "SCRIPTURLPATH" : "/wiki/bin",
+   "URLHOST" : "https://biostat.app.vumc.org",
+   "SYSTEMWEB" : "System",
+   "SERVERTIME" : "19 Sep 2024 - 11:36",
+   "WEB" : "Main",
+   "COOKIEPATH" : "/",
+   "SKIN" : "natedit,pattern",
+   "SCRIPTSUFFIX" : "",
+   "COOKIEREALM" : "",
+   "SCRIPTURL" : "https://biostat.app.vumc.org/wiki/bin",
+   "USERNAME" : "guest",
+   "WIKINAME" : "WikiGuest",
+   "PUBURLPATH" : "/wiki/pub",
+   "USERSWEB" : "Main",
+   "NAMEFILTER" : "[\\\\\\s*?~^$@%`\"'&|<:;>\\[\\]#\\x00-\\x1f]"
+}
+</script>
+<script class='script JQUERYPLUGIN::METADATA' src='../pub/System/JQueryPlugin/plugins/metadata/jquery.metadata1446.js?version=2.1ef2bb44c86f5d0e98d55'></script>
+<script class='script JQUERYPLUGIN::UI' src='../pub/System/JQueryPlugin/plugins/ui/jquery-uif90a.js?version=1.13.2'></script>
+<script class='script JQUERYPLUGIN::UI::AUTOCOMPLETE' src='../pub/System/JQueryPlugin/plugins/ui/jquery.ui.autocomplete.initf90a.js?version=1.13.2'></script>
+<script class='script JSCalendarContrib/calendar' src='../pub/System/JSCalendarContrib/calendar.js'></script>
+<script class='script JSCalendarContrib/calendar-lang' src='../pub/System/JSCalendarContrib/lang/calendar-en.js'></script>
+<script class='script JSCalendarContrib/foswiki' src='../pub/System/JSCalendarContrib/foswiki.js'></script>
+<script class='script JavascriptFiles/foswikiString' type="text/javascript" src="../pub/System/JavascriptFiles/foswikiString.js"></script>
+<script class='script JavascriptFiles/foswikiForm' type="text/javascript" src="../pub/System/JavascriptFiles/foswikiForm.js"></script>
+<script class='script JavascriptFiles/foswikiPref' type="text/javascript" src="../pub/System/JavascriptFiles/foswikiPref.js"></script>
+<script class='script JavascriptFiles/strikeone' type="text/javascript" src="../pub/System/JavascriptFiles/strikeone.js"></script>
+<script class='script PatternSkin/pattern' type="text/javascript" src="../pub/System/PatternSkin/pattern.js"></script>
+</head> 
+<body class="foswikiNoJs patternViewPage foswikiHasChangePermission foswikiGuest">
+<span id="PageTop"></span><div class="foswikiPage"><div id="patternScreen">
+<div id="patternPageShadow"><div id="patternTopBar">
+  <div id="patternTopBarContentsWrapper">
+	 <div id="patternTopBarContents">
+<table border="0" cellpadding="0" cellspacing="0" style="width:100%" summary="">
+<tr><td valign="middle"><span id="foswikiLogo" class="foswikiImage"><a href="WebHome.html"><img src="../pub/Main/SitePreferences/Lockup_VUMC_DeptofBiostatistics_COLORe.png" border="0" alt="Vanderbilt Biostatistics Home" style="border:none;" /></a></span></td>
+<td align="right" valign="top" class="patternMetaMenu">
+  <ul>
+     <li><form name="jumpForm" action="https://biostat.app.vumc.org/wiki/Main/SystemSetupProcedures">
+<input type="text" class="foswikiInputField foswikiDefaultText" name="topic" id="jumpFormField" title="Jump" size="size='18'" value="" />
+<script type="text/javascript">
+jQuery(function() {
+  $('#jumpFormField').autocomplete({
+    source: "https://biostat.app.vumc.org/wiki/System/JumpAutocompleteImpl?section=topic;skin=text;contenttype=application/json;web=all;",
+    select: function(event, ui) {
+      window.location.href = "https://biostat.app.vumc.org/wiki/" + ui.item.value;
+    }
+  });
+});
+</script>
+<noscript>&nbsp;<input type="submit" class="foswikiButton" size="5" name="submit" value="Jump" />&nbsp;</noscript></form></li>
+     <li><form name="quickSearchForm" action="https://biostat.app.vumc.org/wiki/Main/WebSearch"><input type="text" class="foswikiInputField foswikiDefaultText" title="Search" id="quickSearchBox" name="search" value="" size="18" /><input type="hidden" name="scope" value="all" /><input type="hidden" name="web" value="Main" /><noscript>&nbsp;<input type="submit" size="5" class="foswikiButton" name="submit" value="Search" />&nbsp;</noscript></form><div style="padding-top: 8px"><a href="../System/UserRegistration.html">Register</a> | <a href="https://biostat.app.vumc.org/wiki/bin/login?foswiki_origin=GET%2cview%2c/wiki/Main/SystemSetupProcedures">Log In</a></div></li>
+  </ul>
+<p></p>
+
+</td></tr></table></div>
+  </div>
+</div>
+<div id="patternPage">
+<div id="patternWrapper"><div id="patternOuter" class="clear">
+<div id="patternFloatWrap">
+<div id="patternMain"><div id="patternClearHeaderCenter"></div>
+<div id="patternMainContents"><div class="patternTop clear"><span class="patternHomePath foswikiLeft"><span class="patternHomePathTitle">You are here: </span><a href="../index.html">Vanderbilt Biostatistics Wiki</a><span class='foswikiSeparator'>&gt;</span><a href="WebHome.html">Main Web</a><span class='foswikiSeparator'>&gt;</span><a href="WikiUsers.html">TWikiUsers</a><span class='foswikiSeparator'>&gt;</span><a href="DalePlummer.html">DalePlummer</a><span class='foswikiSeparator'>&gt;</span><a href="DalesNotes.html">DalesNotes</a><span class='foswikiSeparator'>&gt;</span><a href="SystemSetupProcedures.html" title='Topic revision: 2 (21 Feb 2023 - 12:12:00)'>SystemSetupProcedures</a> <span class='patternRevInfo'>(21 Feb 2023, <a href="DalePlummer.html">DalePlummer</a>)</span></span><span class="patternToolBar foswikiRight"><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/edit/Main/SystemSetupProcedures?t=1726763792' rel='nofollow' title='Edit this topic text' >Edit </a><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/attach/Main/SystemSetupProcedures' rel='nofollow' title='Attach an image or document to this topic'>Attach</a><span></span></span></div><div class="foswikiContentHeader"></div><div class="patternContent"><div class="foswikiTopic"><h1 id="Computer_Setup_Procedures">  Computer Setup Procedures </h1>
+<div class="foswikiToc" id="foswikiTOC"> <ul>
+<li> <a href="#Windows_Setup"> Windows Setup </a>
+</li> <li> <a href="#macOS_Setup"> macOS Setup </a>
+</li> <li> <a href="#Linux_setup"> Linux setup </a>
+</li></ul> 
+</div>
+<hr />
+<h2 id="Windows_Setup"> Windows Setup </h2> <ul>
+<li> If reusing an existing system, reset or wipe and re-install Windows.  This not needed for a new Dell.
+</li> <li> Apply a barcode sticker.  Add to inventory spreadsheet.
+</li> <li> Perform an Intune configuration (see <a href="https://vumc365.sharepoint.com/:o:/r/sites/VUMCIndependentSupportProviders-IntuneAdminOnboarding/Shared Documents/Intune Admins/Onboarding Documentation?d=w5d2eb1e32b1f408d872c30d6dd6cd15b&amp;csf=1&amp;web=1&amp;e=TmY2Nu">Intune documentation in OneNote</a>)
+</li> <li> Intune configuration <ul>
+<li> Records the computer in Azure Active Directory (see <a href="https://endpoint.microsoft.com/#home">Microsoft Endpoint Manager admin center</a>)
+</li> <li> Sets computer name to BIOS<system-serial-number>
+</li> <li> Configures required VUMC settings
+</li> <li> Installs Microsoft Office 365
+</li> <li> Installs BIG-IP VPN client
+</li> <li> Installs security software
+</li></ul> 
+</li> <li> Send appropriate email if this system is for a new department member (<a href="DalesNotes.html#Your_Windows_laptop_is_ready_40Intune_41">Windows email boilerplate</a>)
+</li></ul> 
+<p></p>
+
+The first user to log on to the system becomes an administrator.  I don't log in before sending the system to the user.  They can install any other software that they need.
+<hr />
+<h2 id="macOS_Setup"> macOS Setup </h2> <ol>
+<li> <a href="https://pegasus.vumc.org/ViewKnowledge.aspx?id=15672">Intune Mac: Assign a MacOS device to an Enrollment Profile</a> (<strong>before</strong> turning on computer for first time)
+</li> <li> <a href="https://pegasus.vumc.org/ViewKnowledge.aspx?id=15771">Intune Mac: Setup and Enrollment</a>
+</li> <li> apply a barcode sticker. 
+</li> <li> add entry to inventory spreadsheet.
+</li> <li> send introductory email to new department member - <a href="DalesNotes.html#Your_MacBook_has_arrived_40configured_41">DalesNotes</a>
+</li></ol> 
+<hr />
+<h2 id="Linux_setup">  Linux setup </h2>
+<h3 id="Re_45installation_Note"> Re-installation Note </h3>
+<p class='p'>If you are re-installing an existing user's computer, you will need to know the computer's host name.  The GID/UID for this user's account is used when creating an account backup staging server.</p>
+
+<h3 id="General_Install_Steps"> General Install Steps </h3>
+<p class='p'>This section describes the setup steps that a general to all Ubuntu installations.  There are a number of steps to be done that are specific to the user who will be using the computer.  Those steps are outlined below.</p>
+
+<h4 id="Labels"> Labels </h4>
+If this is a new computer, get a barcode label from <a href="DalePlummer.html">DalePlummer</a> and place it on the new computer.  The computer hostname should be "biostat<barcode number>" (e.g. biostat0000).
+<p></p>
+
+<h4 id="Install_Ubuntu"> Install Ubuntu </h4>
+Using the live CD, install Ubuntu.  
+<p></p>
+ <ul>
+<li> We usually make partitions like this:  
+</li></ul> 
+<table class="foswikiTable" rules="none">
+	<thead>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th class="foswikiTableCol0 foswikiFirstCol"> <a href="https://biostat.app.vumc.org/wiki/Main/SystemSetupProcedures?sortcol=0;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Partition</a> </th>
+			<th class="foswikiTableCol1"> <a href="https://biostat.app.vumc.org/wiki/Main/SystemSetupProcedures?sortcol=1;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">size</a> </th>
+			<th class="foswikiTableCol2 foswikiLastCol"> <a href="https://biostat.app.vumc.org/wiki/Main/SystemSetupProcedures?sortcol=2;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">comment</a> </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> swap </td>
+			<td class="foswikiTableCol1"> size of memory </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> e.g. 32 GB </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> / </td>
+			<td class="foswikiTableCol1"> 256 GB </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> (approximately) (ext4) This is where all system files are placed. </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> /home </td>
+			<td class="foswikiTableCol1 foswikiLast"> remainder of space </td>
+			<td class="foswikiTableCol2 foswikiLastCol foswikiLast"> (ext4) user's files </td>
+		</tr>
+	</tbody></table> <ul>
+<li> Get a hostname from <a href="https://biostat.app.vumc.org/wiki/Main/ColeBeck">ColeBeck</a> or <a href="DalePlummer.html">DalePlummer</a>
+</li> <li> During the installation, make a user called "biostat".  
+</li></ul> 
+<p class='p'>Once the Ubuntu installation is complete, log on as user "biostat" and continue...</p>
+
+<h4 id="Edit_the_sources.list_file"> Edit the sources.list file </h4>
+Edit the sources.list file to use the <code>http://mirrors.advancedhosters.com/ubuntu/</code> repository. Include main/restricted/universe/multiverse.
+<pre>
+sudo gedit /etc/apt/sources.list
+</pre>
+<p></p>
+
+Here is a sources.list files that works well.  Use "bionic" for 18.04 systems and "focal" for 20.04.  Note the addition of the R materials.
+<pre>
+deb http://mirrors.advancedhosters.com/ubuntu/ focal main restricted universe multiverse
+deb http://mirrors.advancedhosters.com/ubuntu/ focal-updates main restricted universe multiverse
+deb http://mirrors.advancedhosters.com/ubuntu/ focal-backports main restricted universe multiverse
+deb-src http://mirrors.advancedhosters.com/ubuntu/ focal main restricted universe multiverse
+deb-src http://mirrors.advancedhosters.com/ubuntu/ focal-updates main restricted universe multiverse
+deb-src http://mirrors.advancedhosters.com/ubuntu/ focal-backports main restricted universe multiverse
+
+deb http://mirrors.advancedhosters.com/ubuntu/ focal-security main restricted universe multiverse
+deb-src http://mirrors.advancedhosters.com/ubuntu/ focal-security main restricted universe multiverse
+
+deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/
+</pre>
+<p class='p'>Then run these commands to get the key for the R repository:</p>
+
+<pre>
+gpg --keyserver keyserver.ubuntu.com --recv-key 51716619E084DAB9
+gpg -a --export 51716619E084DAB9 &#124; sudo apt-key add -
+</pre>
+<p class='p'>Then...</p>
+
+<pre>
+sudo apt update
+sudo apt dist-upgrade
+</pre>
+<p></p>
+
+And maybe a reboot...
+<pre>
+sudo reboot
+</pre>
+<p></p>
+
+<h4 id="Install_packages"> Install packages </h4>
+Install a few other things that we want.
+<pre>
+sudo apt install gnumeric abiword pidgin samba ntp ssh cifs-utils sshfs nfs-kernel-server nfs-common remmina compizconfig-settings-manager vim r-base-core r-base-dev r-base-html r-doc-pdf r-recommended exim4 htop emacs texlive-base texlive-latex-recommended texlive-latex-extra libjpeg62 libappindicator1 libindicator7 lockfile-progs
+</pre>
+<p></p>
+
+Download (<a href="http://www.rstudio.com/">http://www.rstudio.com/</a>) and install RStudio ( <code>sudo dpkg -i Downloads/rstudio-0.98.953-amd64.deb</code> )
+Also, download (<a href="https://www.google.com/chrome/browser/">https://www.google.com/chrome/browser/</a>) and install Google Chrome ( <code>sudo dpkg -i Downloads/google-chrome-stable_current_amd64.deb</code> )
+<p></p>
+
+<h4 id="Disallow_ssh_root_logins"> Disallow ssh root logins </h4>
+Edit /etc/ssh/sshd_config and set <strong>PermitRootLogin</strong> to <strong>no</strong>
+<pre>
+sudo gedit /etc/ssh/sshd&#95;config
+</pre>
+<p></p>
+
+<h4 id="Set_up_printers"> Set up printers </h4>
+See <a href="PrinterHostnames.html">Printer hostnames</a> for the names and other information about our printers.  (Instructions for installing printers on Windows and Macintosh are in the <a href="FrequentlyAskedQuestionsFAQ.html">FAQ topic</a> (see the "How_to_install_printers..." section))
+<p></p>
+ <ul>
+<li> get printer definition files
+</li></ul> 
+<pre>
+cd /usr/share/cups/drv
+sudo wget http://biostat.app.vumc.org/wiki/pub/Main/UbuntuSetup/hp-color&#95;laserjet&#95;m651-ps.ppd
+sudo wget http://biostat.app.vumc.org/wiki/pub/Main/UbuntuSetup/hp-color&#95;laserjet&#95;m553-ps.ppd
+sudo wget http://biostat.app.vumc.org/wiki/pub/Main/UbuntuSetup/xrx6360dn.ppd
+</pre>
+<p></p>
+ <ul>
+<li> set up printers using the command line (biostatcolor1, biostatcolor2, and biostatcolor3 for regular users; biostatcolor4 is for administrators).  The network addresses for the printers can be deduced from the commands below (following "socket://") or found at <a href="PrinterHostnames.html">PrinterHostnames</a>.
+</li></ul> 
+<pre>
+sudo lpadmin -p 00&#95;biostatcolor1 -L &#34;biostatistics&#34; -D &#34;HP Color LaserJet M651&#34; -P /usr/share/cups/drv/hp-color&#95;laserjet&#95;m651-ps.ppd -v socket://biostatcolor1.dhcp.mc.vanderbilt.edu:9100/ -E
+
+sudo lpadmin -p 00&#95;biostatcolor2 -L &#34;biostatistics&#34; -D &#34;HP Color LaserJet M651&#34; -P /usr/share/cups/drv/hp-color&#95;laserjet&#95;m651-ps.ppd -v socket://biostatcolor2.dhcp.mc.vanderbilt.edu:9100/ -E
+
+sudo lpadmin -p 00&#95;biostatcolor3 -L &#34;biostatistics&#34; -D &#34;HP Color LaserJet M651&#34; -P /usr/share/cups/drv/hp-color&#95;laserjet&#95;m651-ps.ppd -v socket://biostatcolor3.dhcp.mc.vanderbilt.edu:9100/ -E
+
+sudo lpadmin -p 00&#95;biostatcolor4 -L &#34;biostatistics&#34; -D &#34;HP Color LaserJet M651&#34; -P /usr/share/cups/drv/hp-color&#95;laserjet&#95;m651-ps.ppd -v socket://biostatcolor4.dhcp.mc.vanderbilt.edu:9100/ -E
+
+sudo lpadmin -p 00&#95;biostatcolor7 -L &#34;biostatistics&#34; -D &#34;HP Color LaserJet M553&#34; -P /usr/share/cups/drv/hp-color&#95;laserjet&#95;m553-ps.ppd -v socket://biostatcolor7.dhcp.mc.vanderbilt.edu:9100/ -E
+
+</pre>
+<p></p>
+
+<h4 id="Mount_directory_for_administrative_scripts"> Mount directory for administrative scripts </h4>
+Create a mount point for the administrative scripts.
+<pre>
+sudo mkdir -p  /biostat/cvs/admin
+</pre>
+<p class='p'>Add the following line to /etc/fstab</p>
+
+<pre>
+biostat1553.emp.vumc.io:/home/cvs/admin /biostat/cvs/admin nfs nfsvers&#61;3,rsize&#61;8192,wsize&#61;8192,timeo&#61;14,intr 0 0
+</pre>
+...and mount the administrative folder
+<pre>
+sudo mount /biostat/cvs/admin
+</pre>
+<p></p>
+
+<!--
+At this point, you might want to check and see if automounting of the NFS share is working.  Reboot to try it out.  If automounting is not working, the likely culprit is systemd.  Systemd needs to be explicitly told to wait for network stuff to be ready before attempting to mount.  Do this to make that setting.
+<pre>
+systemctl enable NetworkManager-wait-online.service
+</pre>
+-->
+<p></p>
+
+<h4 id="Exim4">  Exim4 </h4>
+This setup allows the workstation to send emails, i.e. from the root account and from user cron jobs. This setup is orthogonal to the VUMCid user's email setup.
+<p class='p'>It works by having exim send all outgoing emails to the smarthost biostat.app.vumc.org. This will only work if the following steps are performed, and if the workstation IP address resolves to biostat?.dhcp.mc.vanderbilt.edu, where ? is replaced with the appropriate number.</p>
+
+Assuming exim v4...
+<pre>
+sudo cp /biostat/cvs/admin/etc/update-exim4.conf.conf /etc/exim4/update-exim4.conf.conf
+sudo /usr/sbin/update-exim4.conf
+sudo cp /biostat/cvs/admin/etc/mailname /etc/mailname
+</pre>
+Then edit <code>/etc/aliases</code> and add the following line <code>root: biostat-it@list.vumc.org</code>
+<p></p>
+
+Restart exim
+<pre>
+sudo /etc/init.d/exim4 restart
+</pre>
+<p></p>
+
+You can test that it works by running something like this: <ul>
+<li> <code>/biostat/cvs/admin/bin/mail-wrapper your.eamail.address@vumc.org ls -lh /tmp</code>
+</li></ul> 
+This will email the output of 'ls -lh /tmp' to the biostat it mailing list. 
+<p></p>
+
+<h4 id="Install_the_Tenable_Nessus_End_Point_Protection_Agent">  Install the Tenable Nessus End Point Protection Agent </h4> <ul>
+<li> <a href="https://biostatdata.app.vumc.org/secdl">https://biostatdata.app.vumc.org/secdl</a>
+</li></ul> 
+<p></p>
+
+<h3 id="Installation_steps_that_are_user_specific"> Installation steps that are user specific </h3>
+Before configuring a new computer, please read <a href="https://biostat.app.vumc.org/wiki/Main/NewEmployeeInfoSysProcedures">NewEmployeeInfoSysProcedures</a>.
+<p></p>
+
+<h4 id="Create_an_account_and_location_for_backup_on_the_biostat1553_server_40backup_staging_server_41">  Create an account and location for backup on the biostat1553 server (backup staging server) </h4> <ul>
+<li> Create the user on the biostat1553.emp.vumc.io server (for backup services).  If this is a reinstall or new computer for an existing user, record the UID and GID from the old system.  See <a href="DalesNotes.html#Transition_to_new_backup_server">Transition to new backup server</a> for additional detail.
+</li></ul> 
+<pre>
+sudo adduser VUMCid
+</pre> <ul>
+<li> Note the UID and GID that are generated when the biostat1553 account is created.  We will use these values when setting up the user account on the workstation.
+</li> <li> edit /etc/passwd and change "/bin/bash" to be "/bin/false" for the user just created
+</li> <li> Make the user's backup directory: /home/wsbu/backup/VUMCid
+</li></ul> 
+<p></p>
+
+<h4 id="Make_a_user_account_on_the_workstation_40if_not_reinstalling_41">  Make a user account on the workstation (if not reinstalling) </h4>
+Be sure to use the GID and UID that you recorded earlier. See <a href="https://biostat.app.vumc.org/wiki/Main/NewEmployeeInfoSysProcedures">NewEmployeeInfoSysProcedures</a> 
+<p></p>
+
+<pre>
+sudo addgroup --gid &#91;GID&#93; &#91;VUMCid&#93;
+sudo useradd --create-home --shell &#34;/bin/bash&#34; --groups cdrom,audio,video,plugdev,lpadmin,adm,sudo --uid &#91;UID&#93; --gid &#91;GID&#93; &#91;VUMCid&#93; &#38;&#38; sudo passwd &#91;VUMCid&#93;
+</pre>
+<p></p>
+
+<h4 id="Workstation_Backups">  Workstation Backups </h4> <ul>
+<li> Create the directory <strong>/biostat/backup/VUMCid</strong>  (make sure to change "VUMCid" to real value)
+</li></ul> 
+<pre>
+sudo mkdir -p /biostat/backup/VUMCid
+</pre>
+<p></p>
+ <ul>
+<li> Add the following line to /etc/fstab:
+</li></ul> 
+<pre>
+biostat1553.emp.vumc.io:/home/wsbu/VUMCid /biostat/backup/VUMCid nfs nfsvers&#61;3,rsize&#61;8192,wsize&#61;8192,timeo&#61;14,intr 0 0
+</pre> 
+<p></p>
+ <ul>
+<li> If you are restoring a backup because of a machine replacement or reimaging then use rsync.  When logged on the the user's account, a command like this will work:
+</li></ul> 
+<pre>
+cd /biostat/backup
+rsync -av VUMCid /home
+</pre>
+<p></p>
+ <ul>
+<li> Add the following cron entry to the <strong>VUMCid's</strong> crontab and choose a suitable value for X and Y ( <code>crontab -e</code>). The command is <code>sudo crontab -u VUMCid -e</code> 
+</li></ul> 
+<pre>
+mm hh  &#42; &#42; &#42; /biostat/cvs/admin/sbin/run-user-cron
+</pre> <ul>
+<li> <strong>If</strong> there's problems mounting those entries, try running <strong>exportfs -a</strong> on the server, either biostat or biostat1553. It seems to clear up the nfs export entries.
+</li></ul> 
+<p></p>
+
+<h4 id="Samba_40optional_41">  Samba (optional) </h4> <ul>
+<li> Set up Samba.  To allow user to mount their /home/VUMCid directory from elsewhere, add this paragraph to then end of their /etc/samba/smb.conf file.  Change "VUMCid" as appropriate.
+</li></ul> 
+<pre>
+&#91;VUMCid&#93;
+    comment &#61; Samba on Ubuntu
+    path &#61; /home/VUMCid
+    read only &#61; no
+    browsable &#61; yes
+</pre> <ul>
+<li> Create a Samba ID: <code>sudo smbpasswd -a VUMCid</code>
+</li> <li> Restart the Samba service:  <code>sudo service smbd restart</code>
+</li></ul> 
+<p></p>
+
+<h4 id="Send_introductory_email_to_new_department_member_40Main.DalesNotes_35Your_Linux_desktop_is_ready_41">  Send introductory email to new department member (<a href="DalesNotes.html#Your_Linux_desktop_is_ready">DalesNotes</a>) </h4> </div>
+<div class="foswikiContentFooter"></div><div class="foswikiFormSteps"><div class="patternTopicActions foswikiFormStep"><span class="patternActionButtons"><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/edit/Main/SystemSetupProcedures?t=1726763792' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit </a><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/attach/Main/SystemSetupProcedures' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='https://biostat.app.vumc.org/wiki/Main/SystemSetupProcedures?cover=print;' rel='nofollow' title='Printable version of this topic' accesskey='p'><span class='foswikiAccessKey'>P</span>rint version</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/oops/Main/SystemSetupProcedures?template=oopshistory' rel='nofollow' title='View complete topic history' accesskey='h'><span class='foswikiAccessKey'>H</span>istory</a>: r2&nbsp;<a href="https://biostat.app.vumc.org/wiki/bin/compare/Main/SystemSetupProcedures?rev1=1;rev2=2" rel="nofollow">&lt;</a>&nbsp;<a href="https://biostat.app.vumc.org/wiki/Main/SystemSetupProcedures?rev=1" rel="nofollow">r1</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='https://biostat.app.vumc.org/wiki/Main/SystemSetupProcedures?template=backlinksweb' rel='nofollow' title='Search the Main Web for topics that link to here' accesskey='b'><span class='foswikiAccessKey'>B</span>acklinks</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='https://biostat.app.vumc.org/wiki/Main/SystemSetupProcedures?raw=on' rel='nofollow' title='View without formatting' accesskey='v'><span class='foswikiAccessKey'>V</span>iew wiki text</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/edit/Main/SystemSetupProcedures?t=1726763792;nowysiwyg=1' rel='nofollow' title='Edit Wiki text' accesskey='w'>Edit <span class='foswikiAccessKey'>w</span>iki text</a><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='https://biostat.app.vumc.org/wiki/Main/SystemSetupProcedures?template=more&amp;maxrev=2&amp;currrev=2' rel='nofollow' title='Delete or rename this topic; set parent topic; view and compare revisions' accesskey='m'><span class='foswikiAccessKey'>M</span>ore topic actions</a></span></span></div></div></div><div class="patternInfo"><span class="patternRevInfo">Topic revision: r2 - 21 Feb 2023, <a href="DalePlummer.html">DalePlummer</a></span></div>
+</div>
+</div><div id="patternSideBar"><div id="patternClearHeaderLeft"></div>
+<div id="patternSideBarContents"><div class="patternWebIndicator">
+<a href='WebHome.html'>Main</a>
+</div> <ul>
+<li> <strong><a href="https://www.vumc.org/biostatistics/">Department Home Page</a></strong>
+</li></ul> 
+<hr /> <ul>
+<li> <strong><a href="http://www.vanderbilt.edu/biostatistics/graduate/">Biostatistics Graduate Program</a></strong>
+</li></ul> 
+<hr /> <ul>
+<li> <strong><a href="https://www.vumc.org/">Vanderbilt University Medical Center</a></strong>
+</li></ul> 
+<hr /> <ul>
+<li> <strong>Main Web</strong>
+</li> <li> <a class="foswikiCurrentWebHomeLink" href="WebHome.html">Main Web Home</a>
+</li> <li> <a href="WebSearch.html">Search</a>
+</li> <li> <a href="WebChanges.html">Recent Changes</a>
+</li> <li> <a href="../bin/changes/Main.html">Changes</a>
+</li> <li> <a href="WebIndex.html">Topic list</a>
+</li></ul> 
+<hr /> <ul>
+<li> <strong>Biostatistics Webs</strong> <ul>
+<li> <a href="../Archive/WebHome.html">Archive</a>
+</li> <li> <a class="foswikiCurrentWebHomeLink" href="WebHome.html">Main</a>
+</li> <li> <a href="../Sandbox/WebHome.html">Sandbox</a>
+</li> <li> <a href="../System/WebHome.html">System</a>
+</li></ul> 
+</li></ul> 
+<p class='p'></p>
+
+<p class='p'></p>
+
+</div></div>
+</div>
+</div></div><div id="patternBottomBar"><div id="patternBottomBarContents"><div id="patternWebBottomBar"><span class="foswikiRight"> <a href="http://foswiki.org/"><img src="../pub/System/ProjectLogos/foswiki-badge.png" alt="This site is powered by Foswiki" title="This site is powered by Foswiki" /></a></span>Copyright &amp;© 2013-2022 by the contributing authors. All material on this collaboration platform is the property of the contributing authors. <br /> Ideas, requests, problems regarding Vanderbilt Biostatistics Wiki? <a href='mailto:biostat-it@vumc.org?subject=Vanderbilt Biostatistics Wiki%20Feedback%20on%20Main.SystemSetupProcedures'>Send feedback</a></div></div></div>
+</div>
+</div>
+</div>
+</div></body>
+<!-- Mirrored from biostat.app.vumc.org/wiki/Main/SystemSetupProcedures by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Sep 2024 16:39:43 GMT -->
+</html>

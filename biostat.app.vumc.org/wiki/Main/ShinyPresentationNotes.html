@@ -1,0 +1,511 @@
+<!DOCTYPE html><html lang="en">
+
+<!-- Mirrored from biostat.app.vumc.org/wiki/Main/ShinyPresentationNotes by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Sep 2024 16:39:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<title> ShinyPresentationNotes &lt; Main &lt; Vanderbilt Biostatistics Wiki</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, user-scalable=yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="icon" href="../pub/Main/SitePreferences/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../pub/Main/SitePreferences/favicon.ico" type="image/x-icon" />
+<link rel="alternate" href="https://biostat.app.vumc.org/wiki/bin/edit/Main/ShinyPresentationNotes?t=1726763851" type="application/x-wiki" title="edit ShinyPresentationNotes" />
+<meta name="TEXT_NUM_TOPICS" content="Number of topics:" />
+<meta name="TEXT_MODIFY_SEARCH" content="Modify search" />
+
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="WebRss" />
+<base  /><!--[if IE]></base><![endif]-->
+<link rel='stylesheet' href='https://biostat.app.vumc.org/wiki/pub/System/PageOptimizerPlugin/cache/76ea346e610aea74367a807e2dd00ef6.css' class='JQUERYPLUGIN::THEME JSCalendarContrib/calendar-large SMILIESPLUGIN head' media='all' />
+<style> .calendar {z-index:2000;}</style>
+
+<style class='head TABLEPLUGIN_default' type="text/css" media="all">
+body .foswikiTable {border-width:1px}
+body .foswikiTable .tableSortIcon img {padding-left:.3em; vertical-align:text-bottom}
+body .foswikiTable td {border-style:solid none; vertical-align:top}
+body .foswikiTable th {border-style:none solid; vertical-align:top; background-color:#d6d3cf; color:#000000}
+body .foswikiTable th a:link {color:#000000}
+body .foswikiTable th a:visited {color:#000000}
+body .foswikiTable th a:hover {color:#000000; background-color:#d6d3cf}
+body .foswikiTable th.foswikiSortedCol {background-color:#c4c1ba}
+body .foswikiTable tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+body .foswikiTable tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f7f7f6}
+body .foswikiTable tr.foswikiTableRowdataBg1 td {background-color:#f7f7f6}
+body .foswikiTable tr.foswikiTableRowdataBg1 td.foswikiSortedCol {background-color:#f0f0ee}
+</style>
+<style class='head TABLEPLUGIN_specific' type="text/css" media="all">
+body .foswikiTable#tableShinyPresentationNotes1 td {vertical-align:middle; vertical-align:top}
+body .foswikiTable#tableShinyPresentationNotes1 td.foswikiTableCol0 {text-align:left}
+body .foswikiTable#tableShinyPresentationNotes1 td.foswikiTableCol1 {text-align:left}
+body .foswikiTable#tableShinyPresentationNotes1 td.foswikiTableCol2 {text-align:left}
+body .foswikiTable#tableShinyPresentationNotes1 td.foswikiTableCol3 {text-align:right}
+body .foswikiTable#tableShinyPresentationNotes1 td.foswikiTableCol4 {text-align:left}
+body .foswikiTable#tableShinyPresentationNotes1 td.foswikiTableCol5 {text-align:left}
+body .foswikiTable#tableShinyPresentationNotes1 td.foswikiTableCol6 {text-align:left}
+body .foswikiTable#tableShinyPresentationNotes1 td.foswikiTableCol7 {text-align:left}
+body .foswikiTable#tableShinyPresentationNotes1 th {vertical-align:middle; background-color:#ffffff; color:#0066cc; text-align:left}
+body .foswikiTable#tableShinyPresentationNotes1 th a:link {color:#0066cc}
+body .foswikiTable#tableShinyPresentationNotes1 th a:visited {color:#0066cc}
+body .foswikiTable#tableShinyPresentationNotes1 th a:hover {color:#0066cc; background-color:#ffffff}
+body .foswikiTable#tableShinyPresentationNotes1 th.foswikiSortedCol {background-color:#eeeeee}
+body .foswikiTable#tableShinyPresentationNotes1 tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+body .foswikiTable#tableShinyPresentationNotes1 tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f5f5f5}
+</style>
+
+<style type="text/css" media="all">
+	/* Styles that are set using variables */
+	.patternBookView .foswikiTopRow,
+	.patternWebIndicator,
+	.patternWebIndicator a {
+		background-color:#9b031e;
+	}
+	#patternTopBarContents { background-image:url(../pub/Main/SitePreferences/top_bar_gradient.png); background-repeat:repeat-x;}
+#patternTopBarContents { background-color:#FFFFFF;}
+.patternBookView {
+	border-color:#9b031e;
+}
+.patternPreviewPage #patternMain {
+	/* uncomment to set the preview image */
+	/*background-image:url("/wiki/pub/System/PreviewBackground/preview2bg.gif");*/
+}
+</style>
+<link rel='stylesheet' href='../pub/System/PatternSkin/print.css' media='print' type='text/css' />
+
+<script class='script JQUERYPLUGIN' src='../pub/System/JQueryPlugin/jquery-2.2.4.js'></script>
+<script class='script JQUERYPLUGIN::OBSERVER' src='../pub/System/JQueryPlugin/plugins/observer/observer4abf.js?version=0.1'></script>
+<script class='script JQUERYPLUGIN::MIGRATE' src='../pub/System/JQueryPlugin/plugins/migrate/jquery.migrate4152.js?version=3.4.0'></script>
+<script class='script JQUERYPLUGIN::FOSWIKI' src='../pub/System/JQueryPlugin/plugins/foswiki/jquery.foswikiae26.js?version=3.10'></script>
+<script class='script JQUERYPLUGIN::BROWSER' src='../pub/System/JQueryPlugin/plugins/browser/jquery.browser72db.js?version=0.1.0'></script>
+<script class='script JQUERYPLUGIN::EASING' src='../pub/System/JQueryPlugin/plugins/easing/jquery.easing7c6c.js?version=1.3'></script>
+<script class='script JQUERYPLUGIN::FOSWIKI::PREFERENCES foswikiPreferences' type='text/json'>{
+   "NAMEFILTER" : "[\\\\\\s*?~^$@%`\"'&|<:;>\\[\\]#\\x00-\\x1f]",
+   "USERSWEB" : "Main",
+   "PUBURLPATH" : "/wiki/pub",
+   "WIKINAME" : "WikiGuest",
+   "COOKIEREALM" : "",
+   "SCRIPTURL" : "https://biostat.app.vumc.org/wiki/bin",
+   "USERNAME" : "guest",
+   "SCRIPTSUFFIX" : "",
+   "SKIN" : "natedit,pattern",
+   "WEB" : "Main",
+   "COOKIEPATH" : "/",
+   "SERVERTIME" : "19 Sep 2024 - 11:37",
+   "URLHOST" : "https://biostat.app.vumc.org",
+   "SYSTEMWEB" : "System",
+   "WIKIUSERNAME" : "Main.WikiGuest",
+   "SCRIPTURLPATH" : "/wiki/bin",
+   "TOPIC" : "ShinyPresentationNotes",
+   "PUBURL" : "https://biostat.app.vumc.org/wiki/pub",
+   "SCRIPTURLPATHS" : {
+      "view" : "/wiki"
+   }
+}
+</script>
+<script class='script JQUERYPLUGIN::METADATA' src='../pub/System/JQueryPlugin/plugins/metadata/jquery.metadata1446.js?version=2.1ef2bb44c86f5d0e98d55'></script>
+<script class='script JavascriptFiles/foswikiString' type="text/javascript" src="../pub/System/JavascriptFiles/foswikiString.js"></script>
+<script class='script JavascriptFiles/foswikiPref' type="text/javascript" src="../pub/System/JavascriptFiles/foswikiPref.js"></script>
+<script class='script JQUERYPLUGIN::TWISTY' src='../pub/System/TwistyPlugin/jquery.twisty327a.js?version=1.6.0'></script>
+<script class='script JQUERYPLUGIN::UI' src='../pub/System/JQueryPlugin/plugins/ui/jquery-uif90a.js?version=1.13.2'></script>
+<script class='script JQUERYPLUGIN::UI::AUTOCOMPLETE' src='../pub/System/JQueryPlugin/plugins/ui/jquery.ui.autocomplete.initf90a.js?version=1.13.2'></script>
+<script class='script JSCalendarContrib/calendar' src='../pub/System/JSCalendarContrib/calendar.js'></script>
+<script class='script JSCalendarContrib/calendar-lang' src='../pub/System/JSCalendarContrib/lang/calendar-en.js'></script>
+<script class='script JSCalendarContrib/foswiki' src='../pub/System/JSCalendarContrib/foswiki.js'></script>
+<script class='script JavascriptFiles/foswikiForm' type="text/javascript" src="../pub/System/JavascriptFiles/foswikiForm.js"></script>
+<script class='script JavascriptFiles/strikeone' type="text/javascript" src="../pub/System/JavascriptFiles/strikeone.js"></script>
+<script class='script PatternSkin/pattern' type="text/javascript" src="../pub/System/PatternSkin/pattern.js"></script>
+</head> 
+<body class="foswikiNoJs patternViewPage foswikiHasChangePermission foswikiGuest">
+<span id="PageTop"></span><div class="foswikiPage"><div id="patternScreen">
+<div id="patternPageShadow"><div id="patternTopBar">
+  <div id="patternTopBarContentsWrapper">
+	 <div id="patternTopBarContents">
+<table border="0" cellpadding="0" cellspacing="0" style="width:100%" summary="">
+<tr><td valign="middle"><span id="foswikiLogo" class="foswikiImage"><a href="WebHome.html"><img src="../pub/Main/SitePreferences/Lockup_VUMC_DeptofBiostatistics_COLORe.png" border="0" alt="Vanderbilt Biostatistics Home" style="border:none;" /></a></span></td>
+<td align="right" valign="top" class="patternMetaMenu">
+  <ul>
+     <li><form name="jumpForm" action="https://biostat.app.vumc.org/wiki/Main/ShinyPresentationNotes">
+<input type="text" class="foswikiInputField foswikiDefaultText" name="topic" id="jumpFormField" title="Jump" size="size='18'" value="" />
+<script type="text/javascript">
+jQuery(function() {
+  $('#jumpFormField').autocomplete({
+    source: "https://biostat.app.vumc.org/wiki/System/JumpAutocompleteImpl?section=topic;skin=text;contenttype=application/json;web=all;",
+    select: function(event, ui) {
+      window.location.href = "https://biostat.app.vumc.org/wiki/" + ui.item.value;
+    }
+  });
+});
+</script>
+<noscript>&nbsp;<input type="submit" class="foswikiButton" size="5" name="submit" value="Jump" />&nbsp;</noscript></form></li>
+     <li><form name="quickSearchForm" action="https://biostat.app.vumc.org/wiki/Main/WebSearch"><input type="text" class="foswikiInputField foswikiDefaultText" title="Search" id="quickSearchBox" name="search" value="" size="18" /><input type="hidden" name="scope" value="all" /><input type="hidden" name="web" value="Main" /><noscript>&nbsp;<input type="submit" size="5" class="foswikiButton" name="submit" value="Search" />&nbsp;</noscript></form><div style="padding-top: 8px"><a href="../System/UserRegistration.html">Register</a> | <a href="https://biostat.app.vumc.org/wiki/bin/login?foswiki_origin=GET%2cview%2c/wiki/Main/ShinyPresentationNotes">Log In</a></div></li>
+  </ul>
+<p></p>
+
+</td></tr></table></div>
+  </div>
+</div>
+<div id="patternPage">
+<div id="patternWrapper"><div id="patternOuter" class="clear">
+<div id="patternFloatWrap">
+<div id="patternMain"><div id="patternClearHeaderCenter"></div>
+<div id="patternMainContents"><div class="patternTop clear"><span class="patternHomePath foswikiLeft"><span class="patternHomePathTitle">You are here: </span><a href="../index.html">Vanderbilt Biostatistics Wiki</a><span class='foswikiSeparator'>&gt;</span><a href="WebHome.html">Main Web</a><span class='foswikiSeparator'>&gt;</span><a href="WikiUsers.html">TWikiUsers</a><span class='foswikiSeparator'>&gt;</span><a href="DalePlummer.html">DalePlummer</a><span class='foswikiSeparator'>&gt;</span><a href="DalesNotes.html">DalesNotes</a><span class='foswikiSeparator'>&gt;</span><a href="ShinyPresentationNotes.html" title='Topic revision: 7 (06 Jun 2019 - 14:56:06)'>ShinyPresentationNotes</a> <span class='patternRevInfo'>(06 Jun 2019, <a href="DalePlummer.html">DalePlummer</a>)</span></span><span class="patternToolBar foswikiRight"><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/edit/Main/ShinyPresentationNotes?t=1726763851' rel='nofollow' title='Edit this topic text' >Edit </a><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/attach/Main/ShinyPresentationNotes' rel='nofollow' title='Attach an image or document to this topic'>Attach</a><span></span></span></div><div class="foswikiContentHeader"></div><div class="patternContent"><div class="foswikiTopic"><h1 id="Shiny_Presentation_Notes"> Shiny Presentation Notes </h1>
+<p></p>
+
+<h1 id="Acknowledgements"> Acknowledgements </h1>
+Much of this presentation comes from <a href="http://shiny.rstudio.com/articles/shinyapps.html">Getting started with ShinyApps.io</a> and the <a href="http://shiny.rstudio.com/tutorial/">Teach yourself Shiny</a> tutorial.
+<p></p>
+
+<h1 id="Using_Shiny_to_Build_Web_Applications">  Using Shiny to Build Web Applications </h1>
+<p class='p'>You've done your research, produced results, and gotten it published.  That's great! Now, the world at large deserves the chance to see your results and use your methods.  We'd like to do this in a way that makes the research easily accessible and the software easy to use.</p>
+
+<p class='p'>We are assuming that your work involves some computer software that has been developed to implement a method, produce reports, or otherwise do statistical analyses.</p>
+
+<p class='p'>An obvious way to present your work is on the Internet. There are many ways to do this.</p>
+ <ul>
+<li> Link to the publication or other write up
+</li> <li> put you code and test data on a repository like <a href="https://github.com/">GitHub</a>
+</li> <li> produce an R package and post it to CRAN
+</li> <li> build an application that implements your methods
+</li></ul> 
+<p></p>
+
+<h2 id="Link_to_the_publication"> Link to the publication </h2>
+<p class='p'>There are many ways to publicize your research.  On your personal web page you can put links to your CV and to your publications.  You can present at conferences and meetings.  You can even use Twitter or Facebook.  These all will do, but if you work involves software then the reader has to download and install  programs and data and go through all the steps that that involves.  It is quite likely that one step or another wont work and your program won't run.</p>
+
+<h2 id="Post_code_44_test_data_44_and_documentation_on_a_repository"> Post code, test data, and documentation on a repository </h2>
+<p class='p'>A repository service like GitHub may be used to distribute your code, documentation, and test data.  This is similar to the previous method except that repositories like GitHub provide more features for sharing.  All the code, documentation, and data can be stored so that when downloaded the directory structure is preserved and components end up where they belong.  In addition, there is a  mechanism for readers to make suggestions, additions, and corrections to you code and upload it for possible inclusion; under your control of course.</p>
+
+<h2 id="Produce_an_R_package"> Produce an R package </h2>
+<p></p>
+
+For R programmers, producing an R package is a very useful way to make your software available to the R community.  Properly constructed and tested packages can be downloaded and installed easily by an R user.  A lot of the potential for problems is removed when software is distributed as an R packages.  R packages can be distributed with the methods we've already discussed or they can be submitted to the CRAN repository for storage and distribution.  CRAN is  <a href="http://cran.us.r-project.org/CRAN">The Comprehensive R Archive Network</a>.  CRAN enforces a structure and testing framework on packages it accepts.  This adds a layer of confidence that the software will perform as designed.
+<p></p>
+
+<h2 id="Implement_your_software_as_a_web_application"> Implement your software as a web application </h2>
+<p class='p'>There are a lot of ways that one can build a web application.  You can learn a programming language like Python or PHP (a useful endeavor in its own right) and develop a bunch of other web application skills.  Or you can use Shiny.
+Shiny is a web application framework for R produced by the RStudio folks.  No HTML, CSS, or JavaScript knowledge is required.  You can use HTML, CSS, and such to change the look and feel of the programs and to add functionality, but they aren't required.  Shiny provides a fairly easy way to turn you analyses into interactive web applications.</p>
+
+<a href="http://www.rstudio.com/">http://www.rstudio.com/</a><br>
+<a href="http://shiny.rstudio.com/">http://shiny.rstudio.com/</a>
+<p class='p'>Shiny has been around for a couple of years. Weve talked about it before but there has been some improvement to the product over the months so I wanted to take another look.  Im not a prolific R programmer nor am I an expert web application developer.  So this look at Shiny is from someone who understands these things and can do a little but is not an expert.</p>
+
+First lets look at some examples of what Shiny can do.  These examples are from the Shiny web site:  <a href="http://shiny.rstudio.com/gallery/">http://shiny.rstudio.com/gallery/</a>
+<p></p>
+ <ul>
+<li> <a href="http://shiny.rstudio.com/gallery/faithful.html">http://shiny.rstudio.com/gallery/faithful.html</a> - a simple example that demonstrates a couple of controls and some graphic output
+</li> <li> <a href="http://shiny.rstudio.com/gallery/widget-gallery.html">http://shiny.rstudio.com/gallery/widget-gallery.html</a> - here is a demonstration of a bunch of the widgets that Shiny makes available
+</li> <li> <a href="http://shiny.rstudio.com/gallery/tabsets.html">http://shiny.rstudio.com/gallery/tabsets.html</a> - a little more sophisticated example that demonstrates a way to have pages or tabs
+</li> <li> <a href="http://shiny.rstudio.com/gallery/download-knitr-reports.html">http://shiny.rstudio.com/gallery/download-knitr-reports.html</a>  - a demonstration that might be of interest to those distributing reports produced with knitr.
+</li></ul> 
+<p></p>
+
+<h2 id="Shiny_Overview"> Shiny Overview </h2>
+<p></p>
+ <ul>
+<li> Every Shiny app has the same structure.  At a minimum there are two R scripts saved together in a directory.  Every Shiny app has ui.R and server.R files.  These files implement the user interface and the working part of the application
+</li> <li> You create a Shiny application by making a new directory and saving the ur.R and server.R files inside it.
+</li> <li> You can run a Shiny app by giving the name of its directory to the R function runApp().
+</li></ul> 
+<p></p>
+
+<h2 id="Build_a_working_program"> Build a working program </h2>
+<p class='p'>Shiny apps have two components:  A user interface script and a server script. There can be other files like help documentation, CSS files to change the look of the application, etc.  But only the interface and server scripts are required.</p>
+
+<p class='p'>First, make sure that Shiny is installed.</p>
+
+<pre>
+&#62; install.packages(&#34;shiny&#34;)
+</pre>
+<p class='p'>Load the library</p>
+
+<pre>
+&#62; library(shiny)
+</pre>
+<p class='p'>Run an example to make sure it works</p>
+
+<pre>
+&#62; runExample(&#34;01&#95;hello&#34;)
+</pre>
+<p class='p'>The Shiny package includes a bunch of examples.  The runExample() function is a special version of the runApp() function that makes it easy to run the examples.  There is also a special purpose web server so you can view your applications without having to install a full blown web server on your workstation.</p>
+
+<p class='p'>Assuming the example runs OK, lets move on and make a simple application.</p>
+
+<p class='p'>Make a directory to hold our application.</p>
+
+<pre>
+&#36; cd ~
+&#36; mkdir bin/demo1
+</pre>
+<p class='p'>Make the two files that all Shiny apps must have</p>
+
+<pre>
+&#36; cd ~/bin/demo1
+&#36; touch ui.R
+&#36; touch server.R
+</pre>
+<p class='p'>Add this code to ur.R.</p>
+
+<pre>
+library(shiny)
+library(ggplot2)
+
+dataset &#60;- diamonds
+
+shinyUI(pageWithSidebar(
+
+  headerPanel(&#34;Diamonds Explorer&#34;),
+
+  sidebarPanel(
+
+    sliderInput(&#39;sampleSize&#39;, &#39;Sample Size&#39;, min&#61;1, max&#61;nrow(dataset),
+                value&#61;min(1000, nrow(dataset)), step&#61;500, round&#61;0),
+
+    selectInput(&#39;x&#39;, &#39;X&#39;, names(dataset)),
+    selectInput(&#39;y&#39;, &#39;Y&#39;, names(dataset), names(dataset)&#91;&#91;2&#93;&#93;),
+    selectInput(&#39;color&#39;, &#39;Color&#39;, c(&#39;None&#39;, names(dataset))),
+
+    checkboxInput(&#39;jitter&#39;, &#39;Jitter&#39;),
+    checkboxInput(&#39;smooth&#39;, &#39;Smooth&#39;),
+
+    selectInput(&#39;facet&#95;row&#39;, &#39;Facet Row&#39;, c(None&#61;&#39;.&#39;, names(dataset))),
+    selectInput(&#39;facet&#95;col&#39;, &#39;Facet Column&#39;, c(None&#61;&#39;.&#39;, names(dataset)))
+  ),
+
+  mainPanel(
+    plotOutput(&#39;plot&#39;)
+  )
+))
+
+</pre>
+<p class='p'>Add this code to server.R</p>
+
+<pre>
+library(shiny)
+library(ggplot2)
+
+shinyServer(function(input, output) {
+
+  dataset &#60;- reactive(function() {
+    diamonds&#91;sample(nrow(diamonds), input&#36;sampleSize),&#93;
+  })
+
+  output&#36;plot &#60;- reactivePlot(function() {
+
+    p &#60;- ggplot(dataset(), aes&#95;string(x&#61;input&#36;x, y&#61;input&#36;y)) + geom&#95;point()
+
+    if (input&#36;color !&#61; &#39;None&#39;)
+      p &#60;- p + aes&#95;string(color&#61;input&#36;color)
+
+    facets &#60;- paste(input&#36;facet&#95;row, &#39;~&#39;, input&#36;facet&#95;col)
+    if (facets !&#61; &#39;. ~ .&#39;)
+      p &#60;- p + facet&#95;grid(facets)
+
+    if (input&#36;jitter)
+      p &#60;- p + geom&#95;jitter()
+    if (input&#36;smooth)
+      p &#60;- p + geom&#95;smooth()
+
+    print(p)
+
+  }, height&#61;700)
+
+})
+</pre>
+<p></p>
+
+<h2 id="Run_the_application"> Run the application </h2>
+The runApp function is similar to read.csv, read.table, and many other functions in R. The first argument of runApp is the filepath from your working directory to the apps directory. The code above assumes that the app directory is in your working directory. In this case, the filepath is just the name of the directory.
+<p></p>
+
+<pre>
+&#62; runApp(~/bin/demo1)
+&#62; ?runApp()
+</pre>
+<p class='p'>In an also be run in "showcase mode" to display to code along with the running application.</p>
+
+<pre>
+&#62; runApp(~/bin/demo1, display.mode&#61;showcase)
+</pre>
+<p></p>
+
+By default, the runApp() function will serve the application to the local machine only (localhost or 127.0.0.1).  To make the application available to others, use the host=0.0.0.0 option.
+<pre>
+&#62; runApp(~/bin/demo1,host&#61;&#34;0.0.0.0&#34;)
+</pre>
+<p></p>
+
+<h2 id="Deploy_the_application"> Deploy the application </h2>
+<p class='p'>There are a number of ways one could deploy a Shiny application.  Using the little web server that comes with Shiny on you workstation probably wouldn't be appropriate.  That server is designed for one user at a time.  Plus it might interfere with other work you want to do.</p>
+
+For this demonstration we are using ShinyApps.io: <a href="https://www.shinyapps.io/">https://www.shinyapps.io/</a>.  It is a hosting service operated by RStudio specifically for hosting Shiny applications. ShinyApps.io provides all kinds of convenience services to make it easy to deploy a Shiny application.
+<p></p>
+
+The department operates a server that can host Shiny apps.  See <a href="https://biostat.app.vumc.org/wiki/Main/StatCompServerInfo">StatCompServerInfo</a> for details about this system.  See <a href="http://biostat.mc.vanderbilt.edu/wiki/Main/FrequentlyAskedQuestionsFAQ#How_do_I_get_a_Shiny_app_hosted_63">How do I get a Shiny app hosted?</a> for details on hosting a Shiny app on this server.
+<p></p>
+
+There is a step by step guide for building a Shiny application and deploying on shinyapps.io: <a href="http://shiny.rstudio.com/articles/shinyapps.html">http://shiny.rstudio.com/articles/shinyapps.html</a> 
+<p></p>
+
+<h2 id="Demo_Steps"> Demo Steps </h2>
+Set the default path to the demo directory.
+<p></p>
+
+<pre>
+&#36; cd /bin/demo1
+</pre>
+<p class='p'>Run Rand test the application.</p>
+
+<pre>
+&#36; R
+&#62; library(shiny)
+&#62; runApp(~/bin/demo1)
+</pre>
+<p class='p'>Install the devtools package.   It is needed to build the shinyapps software.  In order to get devtools to install, I had to install a couple of dependencies.</p>
+
+<p class='p'>At the Linux console, I installed libcurl4-openssl-dev is order to get the curl-config command.</p>
+
+<pre>
+&#36; sudo apt-get install libcurl4-openssl-dev
+</pre>
+<p class='p'>The curl-config command is needed for the RCurl R package that is a requirement for the devtools package.</p>
+
+<pre>
+&#62; install.packages(&#34;RCurl&#34;)
+</pre>
+<p class='p'>Once the dependencies are installed we can proceed to install devtools.</p>
+
+<pre>
+&#62; install.packages(&#39;devtools&#39;)
+</pre>
+<p class='p'>Restart your R session</p>
+
+Now, install the shinyapps package.  It comes from the RStudio <a class="foswikiNewLink" href="https://biostat.app.vumc.org/wiki/bin/edit/Main/GitHub?topicparent=Main.ShinyPresentationNotes" rel="nofollow" title="Create this topic">GitHub</a> repository rather than CRAN.
+<p></p>
+
+<pre>
+&#62; devtools::install&#95;github(&#39;rstudio/shinyapps&#39;)
+</pre>
+<p class='p'>Load the shinyapps library</p>
+
+<pre>
+&#62; library(shinyapps)
+</pre>
+<p></p>
+
+Go to <a href="https://www.shinyapps.io/">https://www.shinyapps.io</a> and log in.  
+<p></p>
+
+A shinyapps.io application must be authorized and connected to my <a class="foswikiNewLink" href="https://biostat.app.vumc.org/wiki/bin/edit/Main/GitHub?topicparent=Main.ShinyPresentationNotes" rel="nofollow" title="Create this topic">GitHub</a> account.  This is done using a token and a secret.  These are generated by shinyapps.io and then copied to our computer.  There is a shinyapps package function called setAccountInfo() that takes this authorization information and stores it.  The authorization information is then used when we push our application to the shinyapps.io server.
+<p class='p'>Click on you username or user icon and select "Tokens".  Now you can either Add a new token or use one previously set up.  Click on Copy to Clipboard to copy the secret and tioken.</p>
+
+<p class='p'>Now back in R on our computer</p>
+
+<p class='p'>Paste the code we just copied from shinyapps.io to the R console.  Use the setAccountInfo() function to load out shinyapp authentication information.  This is needed so we can upload the application to the shinyapp server.</p>
+
+<pre>
+&#62; shinyapps::setAccountInfo(name&#61;&#39;daleplummer&#39;, token&#61;&#39;&#60;token&#62;&#39;, secret&#61;&#39;&#60;secret&#62;&#39;)
+</pre>
+<p class='p'>Run the deployApp() function to upload and configure the application.</p>
+
+<pre>
+&#62; deployApp()
+</pre>
+<p></p>
+
+The apps URL is <a href="http://daleplummer.shinyapps.io/demo1">http://daleplummer.shinyapps.io/demo1</a>
+<p></p>
+
+<h2 id="Examples"> Examples </h2> <ul>
+<li> <a href="https://cqs.mc.vanderbilt.edu/shiny/RiskPrediction/">https://cqs.mc.vanderbilt.edu/shiny/RiskPrediction/</a>
+</li> <li> <a href="http://www.showmeshiny.com/">Show Me Shiny Gallery of R Web Apps</a>
+</li> <li> <a href="http://shiny.rstudio.com/gallery/">Shiny Gallery</a>
+</li> <li> <a href="http://systematicinvestor.wordpress.com/shiny/">financial examples, code available</a>
+</li></ul>  </div>
+<div class="foswikiContentFooter"></div><div class="foswikiFormSteps"><div class="foswikiAttachments foswikiFormStep" style="overflow:auto">
+<div class="twistyPlugin foswikiMakeVisible"><span id="topicattachmentslist1show" style="display:none" class="twistyRememberSetting twistyTrigger foswikiUnvisited twistyInited"><a class="patternTwistyButton" href="#"><img src="../pub/System/DocumentGraphics/toggleopen.png" border="0" alt="" /><span class="foswikiLinkLabel foswikiUnvisited">Attachments <span class='foswikiSmall foswikiGrayText'>3</span></span></a></span><span id="topicattachmentslist1hide" style="display:none" class="twistyRememberSetting twistyTrigger foswikiUnvisited twistyInited"><a class="patternTwistyButton" href="#"><img src="../pub/System/DocumentGraphics/toggleclose.png" border="0" alt="" /><span class="foswikiLinkLabel foswikiUnvisited">Attachments <span class='foswikiSmall foswikiGrayText'>3</span></span></a></span></div><div class="twistyPlugin"><div id="topicattachmentslist1toggle" style="" class="twistyRememberSetting twistyContent twistyInited">
+<table class="foswikiTable" id="tableShinyPresentationNotes1" rules="none">
+	<thead>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th class="foswikiTableCol0 foswikiFirstCol"> <a href="https://biostat.app.vumc.org/wiki/Main/ShinyPresentationNotes?sortcol=0;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">I</a> </th>
+			<th class="foswikiTableCol1"> <a href="https://biostat.app.vumc.org/wiki/Main/ShinyPresentationNotes?sortcol=1;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Attachment</a> </th>
+			<th class="foswikiTableCol2"> <a href="https://biostat.app.vumc.org/wiki/Main/ShinyPresentationNotes?sortcol=2;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Action</a> </th>
+			<th class="foswikiTableCol3"> <a href="https://biostat.app.vumc.org/wiki/Main/ShinyPresentationNotes?sortcol=3;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Size</a> </th>
+			<th class="foswikiTableCol4"> <a href="https://biostat.app.vumc.org/wiki/Main/ShinyPresentationNotes?sortcol=4;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Date</a> </th>
+			<th class="foswikiTableCol5"> <a href="https://biostat.app.vumc.org/wiki/Main/ShinyPresentationNotes?sortcol=5;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Who</a> </th>
+			<th class="foswikiTableCol6 foswikiLastCol"> <a href="https://biostat.app.vumc.org/wiki/Main/ShinyPresentationNotes?sortcol=6;table=1;up=0#sorted_table" rel="nofollow" title="Sort by this column">Comment</a> </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class='foswikiIcon'><img src='../pub/System/DocumentGraphics/else.png' width='16' height='16' alt='shinyslides.odp' /></span><span class="foswikiHidden">odp</span> </td>
+			<td class="foswikiTableCol1"> <a href="https://biostat.app.vumc.org/wiki/pub/Main/ShinyPresentationNotes/shinyslides.odp">shinyslides.odp</a> </td>
+			<td class="foswikiTableCol2"> <a href="https://biostat.app.vumc.org/wiki/bin/attach/Main/ShinyPresentationNotes?filename=shinyslides.odp;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td class="foswikiTableCol3" style="text-align:right"> 24 K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">19 Nov 2014 - 09:13</span> </td>
+			<td class="foswikiTableCol5"> <a href="DalePlummer.html">DalePlummer</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <span class='foswikiIcon'><img src='../pub/System/DocumentGraphics/pdf.png' width='16' height='16' alt='shinyslides.pdf' /></span><span class="foswikiHidden">pdf</span> </td>
+			<td class="foswikiTableCol1"> <a href="https://biostat.app.vumc.org/wiki/pub/Main/ShinyPresentationNotes/shinyslides.pdf">shinyslides.pdf</a> </td>
+			<td class="foswikiTableCol2"> <a href="https://biostat.app.vumc.org/wiki/bin/attach/Main/ShinyPresentationNotes?filename=shinyslides.pdf;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td class="foswikiTableCol3" style="text-align:right"> 33 K </td>
+			<td class="foswikiTableCol4"> <span class="foswikiNoBreak">19 Nov 2014 - 09:13</span> </td>
+			<td class="foswikiTableCol5"> <a href="DalePlummer.html">DalePlummer</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol"> &nbsp; </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> <span class='foswikiIcon'><img src='https://biostat.app.vumc.org/wiki/pub/System/DocumentGraphics/ppt.png' width='16' height='16' alt='shinyslides.pptx' /></span><span class="foswikiHidden">pptx</span> </td>
+			<td class="foswikiTableCol1 foswikiLast"> <a href="https://biostat.app.vumc.org/wiki/pub/Main/ShinyPresentationNotes/shinyslides.pptx">shinyslides.pptx</a> </td>
+			<td class="foswikiTableCol2 foswikiLast"> <a href="https://biostat.app.vumc.org/wiki/bin/attach/Main/ShinyPresentationNotes?filename=shinyslides.pptx;revInfo=1" title="change, update, previous revisions, move, delete..." rel="nofollow">manage</a> </td>
+			<td class="foswikiTableCol3 foswikiLast" style="text-align:right"> 37 K </td>
+			<td class="foswikiTableCol4 foswikiLast"> <span class="foswikiNoBreak">19 Nov 2014 - 09:13</span> </td>
+			<td class="foswikiTableCol5 foswikiLast"> <a href="DalePlummer.html">DalePlummer</a> </td>
+			<td class="foswikiTableCol6 foswikiLastCol foswikiLast"> &nbsp; </td>
+		</tr>
+	</tbody></table>
+</div></div></div><div class="patternTopicActions foswikiFormStep"><span class="patternActionButtons"><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/edit/Main/ShinyPresentationNotes?t=1726763851' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit </a><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/attach/Main/ShinyPresentationNotes' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='https://biostat.app.vumc.org/wiki/Main/ShinyPresentationNotes?cover=print;' rel='nofollow' title='Printable version of this topic' accesskey='p'><span class='foswikiAccessKey'>P</span>rint version</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/oops/Main/ShinyPresentationNotes?template=oopshistory' rel='nofollow' title='View complete topic history' accesskey='h'><span class='foswikiAccessKey'>H</span>istory</a>: r7&nbsp;<a href="https://biostat.app.vumc.org/wiki/bin/compare/Main/ShinyPresentationNotes?rev1=6;rev2=7" rel="nofollow">&lt;</a>&nbsp;<a href="https://biostat.app.vumc.org/wiki/Main/ShinyPresentationNotes?rev=6" rel="nofollow">r6</a>&nbsp;<a href="https://biostat.app.vumc.org/wiki/bin/compare/Main/ShinyPresentationNotes?rev1=5;rev2=6" rel="nofollow">&lt;</a>&nbsp;<a href="https://biostat.app.vumc.org/wiki/Main/ShinyPresentationNotes?rev=5" rel="nofollow">r5</a>&nbsp;<a href="https://biostat.app.vumc.org/wiki/bin/compare/Main/ShinyPresentationNotes?rev1=4;rev2=5" rel="nofollow">&lt;</a>&nbsp;<a href="https://biostat.app.vumc.org/wiki/Main/ShinyPresentationNotes?rev=4" rel="nofollow">r4</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='https://biostat.app.vumc.org/wiki/Main/ShinyPresentationNotes?template=backlinksweb' rel='nofollow' title='Search the Main Web for topics that link to here' accesskey='b'><span class='foswikiAccessKey'>B</span>acklinks</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='https://biostat.app.vumc.org/wiki/Main/ShinyPresentationNotes?raw=on' rel='nofollow' title='View without formatting' accesskey='v'><span class='foswikiAccessKey'>V</span>iew wiki text</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><a class='foswikiRequiresChangePermission' href='https://biostat.app.vumc.org/wiki/bin/edit/Main/ShinyPresentationNotes?t=1726763851;nowysiwyg=1' rel='nofollow' title='Edit Wiki text' accesskey='w'>Edit <span class='foswikiAccessKey'>w</span>iki text</a><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='https://biostat.app.vumc.org/wiki/Main/ShinyPresentationNotes?template=more&amp;maxrev=7&amp;currrev=7' rel='nofollow' title='Delete or rename this topic; set parent topic; view and compare revisions' accesskey='m'><span class='foswikiAccessKey'>M</span>ore topic actions</a></span></span></div></div></div><div class="patternInfo"><span class="patternRevInfo">Topic revision: r7 - 06 Jun 2019, <a href="DalePlummer.html">DalePlummer</a></span></div>
+</div>
+</div><div id="patternSideBar"><div id="patternClearHeaderLeft"></div>
+<div id="patternSideBarContents"><div class="patternWebIndicator">
+<a href='WebHome.html'>Main</a>
+</div> <ul>
+<li> <strong><a href="https://www.vumc.org/biostatistics/">Department Home Page</a></strong>
+</li></ul> 
+<hr /> <ul>
+<li> <strong><a href="http://www.vanderbilt.edu/biostatistics/graduate/">Biostatistics Graduate Program</a></strong>
+</li></ul> 
+<hr /> <ul>
+<li> <strong><a href="https://www.vumc.org/">Vanderbilt University Medical Center</a></strong>
+</li></ul> 
+<hr /> <ul>
+<li> <strong>Main Web</strong>
+</li> <li> <a class="foswikiCurrentWebHomeLink" href="WebHome.html">Main Web Home</a>
+</li> <li> <a href="WebSearch.html">Search</a>
+</li> <li> <a href="WebChanges.html">Recent Changes</a>
+</li> <li> <a href="../bin/changes/Main.html">Changes</a>
+</li> <li> <a href="WebIndex.html">Topic list</a>
+</li></ul> 
+<hr /> <ul>
+<li> <strong>Biostatistics Webs</strong> <ul>
+<li> <a href="../Archive/WebHome.html">Archive</a>
+</li> <li> <a class="foswikiCurrentWebHomeLink" href="WebHome.html">Main</a>
+</li> <li> <a href="../Sandbox/WebHome.html">Sandbox</a>
+</li> <li> <a href="../System/WebHome.html">System</a>
+</li></ul> 
+</li></ul> 
+<p class='p'></p>
+
+<p class='p'></p>
+
+</div></div>
+</div>
+</div></div><div id="patternBottomBar"><div id="patternBottomBarContents"><div id="patternWebBottomBar"><span class="foswikiRight"> <a href="http://foswiki.org/"><img src="../pub/System/ProjectLogos/foswiki-badge.png" alt="This site is powered by Foswiki" title="This site is powered by Foswiki" /></a></span>Copyright &amp;© 2013-2022 by the contributing authors. All material on this collaboration platform is the property of the contributing authors. <br /> Ideas, requests, problems regarding Vanderbilt Biostatistics Wiki? <a href='mailto:biostat-it@vumc.org?subject=Vanderbilt Biostatistics Wiki%20Feedback%20on%20Main.ShinyPresentationNotes'>Send feedback</a></div></div></div>
+</div>
+</div>
+</div>
+</div></body>
+<!-- Mirrored from biostat.app.vumc.org/wiki/Main/ShinyPresentationNotes by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Sep 2024 16:39:43 GMT -->
+</html>
